@@ -2074,10 +2074,11 @@ var DMCP = DMCP || {};
 
   }
   $(document).ready(function () {
-      $(".accordion-panel-header").click(function () {
-          DMCP.accordion.toggleSections($(this));
-        });
+    $(".accordion-panel-header").click(function (e) {
+      e.preventDefault();
+      DMCP.accordion.toggleSections($(this));
     });
+  });
 }(jQuery);
 /* ---------------------------------------------------------------------
 PEARSON MARKETING CLOUD
