@@ -1,0 +1,7051 @@
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+
+    Resource list component.
+------------------------------------------------------------------------ */
+.resource-list {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .resource-list {
+  margin-bottom: 30px;
+}
+
+}
+.resource-list li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+
+    Record list component.
+------------------------------------------------------------------------ */
+.record-list {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .record-list {
+  margin-bottom: 30px;
+}
+
+}
+.record-list li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.record-list li img {
+  width: 60px;
+}
+@media screen and (min-width: 767px) {
+  .record-list li img {
+  width: 300px;
+}
+
+}
+.record-list-item-link {
+  display: block;
+}
+.record-list-item-attributes li {
+  padding-bottom: 15px;
+}
+.record-list-item-attributes li:last-child {
+  margin-bottom: 15px;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+YOUTUBE VIDEO CSS
+------------------------------------------------------------------------ */
+.ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333333;
+  opacity: .75;
+  z-index: 9999 !important;
+}
+.youtube-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 60%;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .youtube-video {
+  margin-bottom: 30px;
+}
+
+}
+.youtube-video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+.youtube-video-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.youtube-video-img {
+  width: 100%;
+  height: 100%;
+}
+.youtube-video-play-img {
+  position: absolute;
+  width: 85px;
+  height: 59px;
+  top: calc(-30px - -50%);
+  left: calc(-43px - -50%);
+  z-index: 2;
+  display: block;
+  background-image: url(components/content/youtube-video/assets/images/youtube-play-icon.png);
+}
+.youtube-video-modal-container {
+  border: none !important;
+  background: white;
+  padding: 0 !important;
+  border-radius: 0px !important;
+  margin: 0px !important;
+  overflow: inherit !important;
+  z-index: 10000 !important;
+}
+@media screen and (min-width: 768px) {
+  .youtube-video-modal-container {
+  width: 700px !important;
+  height: 435px !important;
+}
+
+}
+@media screen and (min-width: 992px) {
+  .youtube-video-modal-container {
+  width: 914px !important;
+  height: 555px !important;
+}
+
+}
+.youtube-video-modal {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0px !important;
+  overflow: hidden !important;
+}
+.youtube-video-cross-icon {
+  position: relative;
+  font-size: 26px !important;
+  color: #000;
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+  width: 40px;
+  border: none;
+  background: none;
+  z-index: 10001;
+}
+.youtube-video-container {
+  position: relative;
+  width: 100%;
+  top: 10px;
+  clear: both;
+}
+@media screen and (min-width: 768px) {
+  .youtube-video-container {
+  height: 360px;
+}
+
+}
+@media screen and (min-width: 992px) {
+  .youtube-video-container {
+  height: 480px;
+}
+
+}
+.youtube-video-container > .youtube-video-iframe {
+  position: relative;
+  display: block;
+  border: 2px solid #ffffff;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .youtube-video-container > .youtube-video-iframe {
+  width: 640px;
+  height: 360px;
+}
+
+}
+@media screen and (min-width: 992px) {
+  .youtube-video-container > .youtube-video-iframe {
+  width: 854px;
+  height: 480px;
+}
+
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    User registration.
+------------------------------------------------------------------------ */
+.user-registration {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .user-registration {
+  margin-bottom: 30px;
+}
+
+}
+.user-registration-name label,
+.user-registration-birth-date label,
+.user-registration-phone label {
+  position: fixed;
+  left: -9999px;
+}
+.user-registration-name input {
+  width: 49%;
+  float: left;
+}
+.user-registration-name .first-name {
+  margin-right: 2%;
+}
+.user-registration-birth-date select {
+  width: 42%;
+  float: left;
+  margin-right: 3%;
+}
+.user-registration-birth-date .day {
+  width: 22%;
+  float: left;
+  margin-right: 3%;
+}
+.user-registration-birth-date .year {
+  width: 30%;
+  float: left;
+}
+.user-registration-phone select {
+  width: 30%;
+  float: left;
+  margin-right: 3%;
+}
+.user-registration-phone input {
+  width: 67%;
+  float: left;
+}
+.user-registration .submit-button:hover {
+  cursor: pointer;
+}
+.user-registration-recaptcha {
+  position: relative;
+}
+.user-registration-recaptcha a:hover {
+  text-decoration: none;
+}
+.user-registration-recaptcha input {
+  width: 100%;
+  max-width: 300px;
+}
+.user-registration-recaptcha cite {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  text-align: right;
+}
+.user-registration-recaptcha .recaptcha_image {
+  width: 100% !important;
+  height: auto !important;
+}
+.user-registration-recaptcha img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+}
+.user-registration-recaptcha .recaptcha_audio_cant_hear_link {
+  cursor: pointer;
+}
+.user-registration-recaptcha .recaptcha_icons {
+  min-height: 10px;
+}
+@media screen and (min-width: 768px) {
+  .user-registration-recaptcha .recaptcha_icons {
+  position: absolute;
+  top: 10px;
+  left: 320px;
+}
+
+}
+.user-registration-recaptcha-icon {
+  float: left;
+  padding-right: 20px;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* -------------------------
+TAGS
+------------------------- */
+.tags {
+  min-height: 50px;
+  padding: 15px 10px;
+  overflow: auto;
+  margin-bottom: 15px;
+  background-color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  .tags {
+  margin-bottom: 30px;
+}
+
+}
+.tags h6 {
+  float: left;
+  margin-right: 15px;
+}
+.tags ul {
+  float: left;
+  max-width: 85%;
+}
+.tags li {
+  margin-left: 0;
+  margin-right: 15px;
+  float: left;
+  list-style: none;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+TAG LIST CSS
+------------------------------------------------------------------------ */
+.tag-list {
+  max-width: 100%;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .tag-list {
+  margin-bottom: 30px;
+}
+
+}
+.tag-list h3 {
+  margin-bottom: 15px;
+}
+.tag-list li {
+  margin-left: 0;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+.tag-list .selected {
+  font-weight: bold;
+}
+.tag-list a {
+  cursor: pointer;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+TABLE RESPONSIVE CSS
+------------------------------------------------------------------------ */
+.table-responsive {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .table-responsive {
+  margin-bottom: 30px;
+}
+
+}
+.table-responsive > table {
+  border-collapse: collapse;
+  border: 1px solid #666666;
+}
+.table-responsive td,
+.table-responsive th {
+  border: 1px solid #666666;
+  padding: 0.25rem 0.5rem;
+}
+@media screen and (max-width: 767px) {
+  .table-responsive {
+  width: 100%;
+  margin-bottom: 3.75px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+}
+.table-responsive > table {
+  margin-bottom: 10px;
+}
+.table-responsive > table > thead > tr > th,
+.table-responsive > table > tbody > tr > th,
+.table-responsive > table > tfoot > tr > th,
+.table-responsive > table > thead > tr > td,
+.table-responsive > table > tbody > tr > td,
+.table-responsive > table > tfoot > tr > td {
+  white-space: nowrap;
+}
+
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Tab panel component.
+------------------------------------------------------------------------ */
+.tab-panel {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .tab-panel {
+  margin-bottom: 30px;
+}
+
+}
+.tab-panel li {
+  margin-left: 0;
+}
+.tab-panel .tab-pane {
+  position: fixed;
+  left: -9999px;
+  display: block;
+}
+.tab-panel .tab-pane.active {
+  position: static;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+SUBJECT PANEL CSS
+------------------------------------------------------------------------ */
+.subject-panel {
+  *zoom: 1;
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .subject-panel {
+  margin-bottom: 20px;
+}
+
+}
+.subject-panel a {
+  display: block;
+  width: 100%;
+  clear: both;
+  cursor: pointer;
+}
+.subject-panel h2 {
+  display: block;
+  width: 100%;
+  line-height: 1.18182;
+  margin-bottom: 10px;
+}
+.subject-panel-image-container img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.subject-panel-subtitle {
+  display: block;
+  width: 100%;
+  clear: both;
+  margin-bottom: 10px;
+}
+.subject-panel-txt {
+  width: 100%;
+  clear: both;
+  cursor: default;
+  margin-bottom: 10px;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+SECONDARY NAVIGATION CSS
+------------------------------------------------------------------------ */
+.secondary-nav {
+  width: 100%;
+  position: relative;
+  margin-bottom: 15px;
+  background-color: #333333;
+}
+@media screen and (min-width: 768px) {
+  .secondary-nav {
+  min-height: 70px;
+  margin-bottom: 30px;
+  background-color: #e7e7e7;
+}
+
+}
+.secondary-nav-header {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .secondary-nav-header {
+  display: none;
+}
+
+}
+.secondary-nav-toggle {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  color: white;
+  padding: 15px 0px;
+  background-color: #333333;
+  border-style: none;
+}
+.secondary-nav-toggle-icon {
+  float: right;
+  font-size: 30px;
+  margin-top: -5px;
+  height: 20px;
+}
+@media screen and (min-width: 768px) {
+  .secondary-nav-toggle {
+  display: none;
+}
+
+}
+.secondary-nav-selected-text {
+  float: left;
+  width: 90%;
+  text-align: left;
+}
+.secondary-nav-collapse {
+  margin: 0 -15px;
+  background-color: #e7e7e7;
+  clear: both;
+}
+@media screen and (min-width: 768px) {
+  .secondary-nav-collapse {
+  display: block;
+  min-height: 70px;
+}
+
+}
+.secondary-nav-lvl1-link {
+  color: #666666;
+  display: block;
+  text-decoration: none;
+  padding: 15px 15px 15px 15px;
+  border-width: 1px;
+  border-top-style: solid;
+  border-color: #999999;
+}
+.secondary-nav-lvl1-link:hover {
+  text-decoration: none;
+  outline: none;
+  color: #333333;
+}
+.secondary-nav-lvl1-link:hover:focus {
+  text-decoration: none;
+  outline: none;
+  color: #333333;
+}
+.secondary-nav-lvl1-link:focus:active {
+  text-decoration: none;
+  outline: none;
+  color: #333333;
+}
+.secondary-nav-lvl1-link:focus {
+  text-decoration: none;
+  color: #333333;
+}
+@media screen and (min-width: 768px) {
+  .secondary-nav-lvl1-link {
+  padding: 20px 15px 20px 15px;
+  border-style: none;
+}
+
+}
+.secondary-nav-lvl2-link {
+  color: #666666;
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 15px 15px 15px 25px;
+  border-width: 1px;
+  border-top-style: solid;
+  border-color: #999999;
+}
+.secondary-nav-lvl2-link:hover {
+  text-decoration: none;
+  outline: none;
+  color: #333333;
+}
+.secondary-nav-lvl2-link:hover:focus {
+  text-decoration: none;
+  outline: none;
+  color: #333333;
+}
+.secondary-nav-lvl2-link:focus:active {
+  text-decoration: none;
+  outline: none;
+  color: #333333;
+}
+.secondary-nav-lvl2-link:focus {
+  text-decoration: none;
+  color: #333333;
+}
+.secondary-nav .nav-dropdown {
+  position: relative;
+}
+.secondary-nav-lvl1 {
+  list-style: none;
+  background-color: inherit;
+  padding: 0;
+  margin: 0;
+}
+.secondary-nav-lvl1 li {
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .secondary-nav-lvl1 .open .secondary-nav-lvl2 {
+  position: static;
+  float: none;
+  width: auto;
+  margin-top: 0;
+}
+.secondary-nav-lvl1 .open .secondary-nav-lvl2 .dropdown-header {
+  padding: 5px 15px 5px 25px;
+}
+
+}
+.secondary-nav-lvl1 .secondary-nav-open {
+  background-color: #E04854;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .secondary-nav-lvl1 {
+  float: left;
+}
+.secondary-nav-lvl1 > li {
+  float: left;
+  line-height: 20px;
+}
+
+}
+.secondary-nav-lvl2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  float: left;
+  list-style: none;
+  text-align: left;
+  background-color: #e7e7e7;
+  border-width: 1px;
+  border-top-style: solid;
+  border-color: #999999;
+  min-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .secondary-nav-lvl2 {
+  min-width: 150px;
+  z-index: 1;
+}
+
+}
+.secondary-nav-lvl2 .secondary-nav-open {
+  background-color: #FA5664;
+  color: #FFFFFF;
+}
+.secondary-nav-lvl2 .secondary-nav-lvl1-link {
+  border-style: none;
+  padding: 15px 15px 15px 15px;
+}
+@media screen and (max-width: 767px) {
+  .secondary-nav-dropdown-toggle:after {
+  content: '+';
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+}
+.secondary-nav .open > .secondary-nav-lvl2 {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .secondary-nav .open > .secondary-nav-dropdown-toggle:after {
+  content: '-';
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+SEARCH RESULTS CSS
+------------------------------------------------------------------------ */
+.search-results-list {
+  width: 100%;
+  min-height: 100px;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .search-results-list {
+  margin-bottom: 30px;
+}
+
+}
+.search-results-list-results {
+  width: 100%;
+  overflow: inherit;
+}
+.search-results-list-results li {
+  width: 100%;
+  overflow: inherit;
+  margin-bottom: 25px;
+  list-style: none;
+  margin-left: 0;
+}
+.search-results-list-results article {
+  overflow: auto;
+}
+.search-results-list-results img {
+  width: 50px;
+  margin-right: 20px;
+  float: left;
+}
+@media screen and (min-width: 768px) {
+  .search-results-list-results img {
+  width: 60px;
+}
+
+}
+.search-results-list-results div {
+  float: left;
+  margin-left: 70px;
+  width: calc(-70px - -100%);
+}
+@media screen and (min-width: 768px) {
+  .search-results-list-results div {
+  margin-left: 80px;
+  width: calc(-80px - -100%);
+}
+
+}
+.search-results-list-results img + div {
+  margin-left: 0px;
+}
+.search-results-list-results .no-image {
+  margin-left: 0px;
+  width: 100%;
+}
+.search-results-list-results h2 {
+  margin-bottom: 5px;
+}
+.search-results-list-results cite {
+  word-wrap: break-word;
+  margin-bottom: 5px;
+  display: block;
+}
+.search-results-list-results p {
+  margin-bottom: 5px;
+  cursor: default;
+}
+.search-results-list-pages-container {
+  width: 100%;
+  overflow: auto;
+  text-align: center;
+  -ms-overflow-style: none;
+}
+@media screen and (max-width: 767px) {
+  .search-results-list-pages-container {
+  min-height: 48px;
+}
+
+}
+.search-results-list-pages-elements {
+  font-size: 16px;
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .search-results-list-pages-elements {
+  width: 100%;
+  display: block;
+}
+
+}
+.search-results-list-pages-elements ol {
+  list-style: none;
+  float: left;
+}
+.search-results-list-pages-elements ol li {
+  float: left;
+  padding-right: 10px;
+  margin: 0;
+}
+.search-results-list-pages-elements ol li:last-child {
+  padding-right: 30px;
+}
+@media screen and (max-width: 767px) {
+  .search-results-list-pages-elements ol {
+  display: none;
+}
+
+}
+.search-results-list-pages-prev {
+  float: left;
+  padding-right: 30px;
+}
+@media screen and (max-width: 767px) {
+  .search-results-list-pages-prev {
+  border: 1px solid #cccccc;
+  padding: 15px 0;
+  width: 85px;
+  text-align: center;
+  position: absolute;
+  left: 15px;
+}
+
+}
+.search-results-list-pages-mobile {
+  text-align: center;
+  position: absolute;
+  left: 100px;
+  right: 100px;
+  padding-top: 16px;
+}
+@media screen and (min-width: 768px) {
+  .search-results-list-pages-mobile {
+  display: none;
+}
+
+}
+.search-results-list-pages-next {
+  float: left;
+}
+@media screen and (max-width: 767px) {
+  .search-results-list-pages-next {
+  border: 1px solid #cccccc;
+  padding: 15px 0;
+  width: 85px;
+  text-align: center;
+  position: absolute;
+  right: 15px;
+}
+
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+.search-facets {
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .search-facets {
+  margin-bottom: 15px;
+}
+
+}
+.search-facets-container {
+  padding-left: 0;
+  list-style: none;
+}
+.search-facets-container > li {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .search-facets-container > li {
+  margin-bottom: 15px;
+}
+
+}
+.search-facets-container > li > a {
+  text-decoration: none;
+  margin-right: 20px;
+  color: #333333;
+  cursor: pointer;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .search-facets-container > li > a {
+  font-size: inherit;
+}
+
+}
+.search-facets-container > li > a:hover {
+  color: #000000;
+}
+.search-facets-selected {
+  border-bottom: 6px solid #333333;
+  padding-bottom: 10px;
+  font-weight: bold;
+  cursor: default;
+  margin-right: 20px;
+  color: #333333;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+@media screen and (min-width: 768px) {
+  .search-facets-selected {
+  margin-bottom: 15px;
+  font-size: inherit;
+}
+
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+Search box
+------------------------------------------------------------------------ */
+.search-box {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .search-box {
+  margin-bottom: 30px;
+}
+
+}
+.search-box form {
+  position: relative;
+}
+.search-box-input {
+  width: 100%;
+  padding: 0px 25px 0px 5px;
+}
+.search-box-icon {
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background: none;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Reset password component.
+------------------------------------------------------------------------ */
+.reset-password {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .reset-password {
+  margin-bottom: 30px;
+}
+
+}
+.reset-password div {
+  margin-bottom: 15px;
+}
+.reset-password label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.reset-password .error {
+  display: none;
+}
+.reset-password .has-message .error {
+  clear: both;
+  display: block;
+  margin-bottom: 5px;
+}
+.reset-password .submit-button {
+  margin-top: 5px;
+}
+.reset-password .submit-button:hover {
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+	_______________________
+	
+    Pearson banner component.
+------------------------------------------------------------------------ */
+.pearson-banner {
+  height: 45px;
+}
+.pearson-banner-logo {
+  float: left;
+  width: 84px;
+  height: 14px;
+  margin-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .pearson-banner-logo {
+  width: 112px;
+  height: 18px;
+  margin-top: 13px;
+}
+
+}
+.pearson-banner-always-learning {
+  position: absolute;
+  left: 0;
+  top: -9999px;
+}
+@media screen and (min-width: 768px) {
+  .pearson-banner-always-learning {
+  position: static;
+  float: right;
+  width: 137px;
+  height: 8px;
+  margin-top: 17px;
+}
+
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+Page search box
+------------------------------------------------------------------------ */
+.page-search-box {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .page-search-box {
+  width: 600px;
+  margin-bottom: 30px;
+}
+
+}
+.page-search-box-input {
+  border: 1px outset #cccccc;
+  height: 40px;
+  width: 100%;
+  padding: 0px 45px 0px 5px;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+.page-search-box-icon {
+  border: none;
+  background-color: #0099ff;
+  font-size: 20px;
+  color: #ffffff;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 40px;
+  height: 40px;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+News Feed
+------------------------------------------------------------------------ */
+.news-feed {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .news-feed {
+  margin-bottom: 30px;
+}
+
+}
+.news-feed-container {
+  background-color: #e7e7e7;
+  min-height: 80px;
+  overflow: hidden;
+}
+.news-feed-title {
+  float: left;
+  margin-top: 30px;
+  padding-left: 15px;
+  color: #333333;
+  min-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .news-feed-title {
+  margin-top: 28px;
+  min-width: 0%;
+}
+
+}
+.news-feed-news {
+  position: relative;
+  overflow: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .news-feed-news {
+  padding-right: 15px;
+  min-width: 0%;
+}
+
+}
+.news-feed-news > .item {
+  position: fixed;
+  left: -9999px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -ms-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+.news-feed-news .active {
+  opacity: 1;
+  position: relative;
+  left: 0px;
+}
+.news-feed-headlines {
+  margin: 15px 0 10px 0;
+  float: left;
+  text-align: left;
+  min-width: 100%;
+  height: 76px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.news-feed-headlines:hover,
+.news-feed-headlines:focus,
+.news-feed-headlines:active {
+  text-decoration: none;
+}
+.news-feed footer {
+  position: relative;
+  float: right;
+  padding-right: 15px;
+}
+.news-feed-left-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: #cccccc;
+  display: block;
+  cursor: pointer;
+  float: left;
+  margin-right: 10px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+}
+.news-feed-pause,
+.news-feed-play {
+  width: 30px;
+  height: 30px;
+  background-color: #cccccc;
+  display: block;
+  cursor: pointer;
+  float: left;
+  margin-right: 10px;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+}
+.news-feed-right-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: #cccccc;
+  display: block;
+  cursor: pointer;
+  float: left;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+  padding-left: 2px;
+}
+@media screen and (min-width: 768px) {
+  .col-sm-12 .news-feed-news {
+  padding-left: 30px;
+}
+
+}
+@media screen and (min-width: 768px) {
+  .col-xs-12 .news-feed-headlines {
+  min-width: 0%;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  height: 19px;
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .col-xs-12 .news-feed-headlines {
+  height: 38px;
+}
+
+}
+.col-sm-8 .news-feed-news {
+  padding-left: 15px;
+}
+@media screen and (min-width: 768px) {
+  .col-sm-8 .news-feed-headlines {
+  min-width: 0%;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  height: 38px;
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .col-sm-8 .news-feed-headlines {
+  height: 38px;
+  margin-bottom: 10px;
+}
+
+}
+.col-sm-6 .news-feed-news {
+  padding-left: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .col-sm-6 .news-feed-news {
+  clear: both;
+}
+
+}
+@media screen and (min-width: 768px) {
+  .col-sm-6 .news-feed-headlines {
+  min-width: 0%;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  height: 57px;
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .col-sm-6 .news-feed-headlines {
+  height: 57px;
+  margin-top: 20px;
+}
+
+}
+.col-sm-4 .news-feed-news {
+  padding-left: 15px;
+  clear: both;
+}
+@media screen and (min-width: 768px) {
+  .col-sm-4 .news-feed-headlines {
+  min-width: 0%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  height: 57px;
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .col-sm-4 .news-feed-headlines {
+  height: 76px;
+}
+
+}
+.col-sm-3 .news-feed-news {
+  padding-left: 15px;
+  clear: both;
+}
+@media screen and (min-width: 768px) {
+  .col-sm-3 .news-feed-headlines {
+  min-width: 0%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  height: 76px;
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .col-sm-3 .news-feed-headlines {
+  height: 133px;
+}
+
+}
+@media screen and (min-width: 768px) {
+  .container-fluid .col-sm-3 .news-feed-headlines {
+  min-width: 0%;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  height: 57px;
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container-fluid .col-sm-3 .news-feed-headlines {
+  height: 95px;
+}
+
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Mega navigation component.
+------------------------------------------------------------------------ */
+.mega-nav {
+  margin-bottom: 15px;
+  /* Style for 1st level Menu */
+
+  /* To show the sub menu in full width */
+
+}
+.mega-nav .dropdown {
+  margin: 0px;
+}
+.mega-nav li > a {
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .mega-nav {
+  margin-bottom: 30px;
+}
+
+}
+.mega-nav .collapse,
+.mega-nav .dropup,
+.mega-nav .dropdown {
+  position: static;
+}
+.mega-nav .container {
+  position: relative;
+}
+.mega-nav .dropdown-menu {
+  left: auto;
+}
+.mega-nav-content {
+  padding: 20px 30px;
+}
+.mega-nav-full-width .dropdown-menu {
+  z-index: 9000;
+  left: 0;
+  right: 0;
+}
+.mega-nav-full-width .container {
+  width: 100%;
+}
+.mega-nav .dropdown-menu > li {
+  margin: 5px;
+  padding: 0px;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Login status component.
+------------------------------------------------------------------------ */
+.login-status {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .login-status {
+  margin-bottom: 30px;
+}
+
+}
+.login-status ul {
+  list-style-type: none;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Login component.
+------------------------------------------------------------------------ */
+.login {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .login {
+  margin-bottom: 30px;
+}
+
+}
+.login input {
+  margin-bottom: 15px;
+}
+.login label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.login .checkbox-inline {
+  font-weight: normal;
+}
+.login .error-message {
+  display: none;
+}
+.login .has-error .error-message {
+  color: #ff0000;
+  clear: both;
+  display: block;
+  margin-bottom: 15px;
+}
+.login .submit-button {
+  margin-top: 5px;
+}
+.login .submit-button:hover {
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Locale selection component.
+------------------------------------------------------------------------ */
+.locale-selection {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .locale-selection {
+  margin-bottom: 30px;
+}
+
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2015
+ */
+/* ---------------------------------------------------------------------
+LINK LIST
+------------------------------------------------------------------------ */
+.link-list {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .link-list {
+  margin-bottom: 30px;
+}
+
+}
+.link-list-tile-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.link-list .link-list-tags {
+  list-style: none;
+  overflow: auto;
+}
+.link-list .link-list-tags li {
+  margin: 0 5px 10px 0;
+  float: left;
+}
+.link-list h2 {
+  margin-bottom: 10px;
+}
+.link-list li {
+  margin: 0 0 10px 0;
+  list-style-type: none;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+Legal Notification
+------------------------------------------------------------------------ */
+.legal-notification {
+  padding: 7px 0;
+  overflow: hidden;
+  *overflow: visible;
+  *zoom: 1;
+  font-size: 13px;
+  line-height: 1.3636363636363635;
+  background: #000000;
+  color: #ffffff;
+}
+.legal-notification a {
+  color: #ffffff;
+}
+.legal-notification a:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+@media screen and (min-width: 992px) {
+  .legal-notification {
+  min-height: 50px;
+  padding: 15px 0;
+}
+
+}
+.legal-notification-copy {
+  display: block;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .legal-notification-copy {
+  float: left;
+  /* cleared in screen.css */
+  
+  margin-bottom: 0;
+  /* override screen.css */
+  
+}
+
+}
+@media screen and (min-width: 768px) {
+  .legal-notification-links-container {
+  float: right;
+  /* cleared in screen.css */
+  
+}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .legal-notification-links-container {
+  float: none;
+  clear: left;
+  padding-top: 10px;
+}
+
+}
+.legal-notification-links {
+  *zoom: 1;
+  list-style: none;
+}
+.legal-notification-links:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.legal-notification-links:before {
+  content: " ";
+  display: table;
+}
+.legal-notification-links > * {
+  float: left;
+  -mozkit-text-decoration: none;
+}
+.legal-notification-links > * + * {
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+IFRAME CSS
+------------------------------------------------------------------------ */
+.iframe {
+  position: relative;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .iframe {
+  margin-bottom: 30px;
+}
+
+}
+.iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+Header search box
+------------------------------------------------------------------------ */
+.header-search-box {
+  display: inline-block;
+  border: 1px outset #cccccc;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .header-search-box {
+  position: relative;
+  float: right;
+  margin-top: 10px;
+  right: 0px;
+  top: 0px;
+}
+
+}
+.header-search-box-input {
+  border: none;
+  height: 30px;
+  width: 150px;
+  padding: 0px 35px 0px 5px;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+.header-search-box-input::-webkit-input-placeholder {
+  color: #666666;
+}
+.header-search-box-input::-moz-placeholder {
+  color: #666666;
+}
+.header-search-box-input:-ms-input-placeholder {
+  color: #666666;
+}
+.header-search-box-icon {
+  border: none;
+  background: none;
+  font-size: 13px;
+  display: inline-block;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  color: #666666;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+TOP NAVIGATION CSS
+------------------------------------------------------------------------ */
+.header-nav {
+  position: relative;
+}
+@media screen and (min-width: 768px) {
+  .header-nav {
+  width: 85%;
+  position: relative;
+}
+
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .header-nav {
+  width: 80%;
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .header-nav {
+  width: 75%;
+}
+
+}
+.header-nav-container {
+  position: relative;
+  height: 100%;
+}
+.header-nav-header {
+  float: left;
+}
+.header-nav-toggle {
+  position: relative;
+  float: left;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+  background: none;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .header-nav-toggle {
+  display: none;
+}
+
+}
+.header-nav-collapse {
+  background-color: #333333;
+  clear: both;
+  margin: 0px -15px;
+}
+@media screen and (min-width: 768px) {
+  .header-nav-collapse {
+  display: block;
+}
+
+}
+.header-nav-lvl1 {
+  list-style: none;
+}
+.header-nav-lvl1 .header-nav-lvl2 li {
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .header-nav-lvl1 li {
+  margin: 0;
+}
+.header-nav-lvl1 .open .header-nav-lvl2 {
+  position: static;
+  float: none;
+  width: auto;
+  margin-top: 0;
+}
+.header-nav-lvl1 .header-nav-lvl2 li {
+  margin: 0;
+}
+
+}
+@media screen and (min-width: 768px) {
+  .header-nav-lvl1 {
+  float: left;
+}
+.header-nav-lvl1 > li {
+  margin: 0;
+  float: left;
+}
+
+}
+.header-nav-lvl1-link {
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px 10px 15px;
+  border-width: 1px;
+  border-top-style: solid;
+  border-color: white;
+  font-size: 16px;
+}
+.header-nav-lvl1-link:hover {
+  text-decoration: none;
+  outline: none;
+  color: #cccccc;
+}
+.header-nav-lvl1-link:hover:focus {
+  text-decoration: none;
+  outline: none;
+  color: #cccccc;
+}
+.header-nav-lvl1-link:focus:active {
+  text-decoration: none;
+  outline: none;
+  color: #cccccc;
+}
+.header-nav-lvl1-link:focus {
+  text-decoration: none;
+  color: #cccccc;
+}
+@media screen and (min-width: 768px) {
+  .header-nav-lvl1-link {
+  padding: 16px 30px 16px 15px;
+  border-style: none;
+  font-size: inherit;
+}
+.header-nav-lvl1-link:hover {
+  outline: none;
+  font-size: inherit;
+}
+.header-nav-lvl1-link:hover:focus {
+  outline: none;
+  font-size: inherit;
+}
+.header-nav-lvl1-link:focus:active {
+  outline: none;
+  font-size: inherit;
+}
+.header-nav-lvl1-link:focus {
+  font-size: inherit;
+}
+
+}
+.header-nav-lvl2-link {
+  color: #ffffff;
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+  padding: 10px 15px 10px 25px;
+  border-width: 1px;
+  border-top-style: solid;
+  border-color: white;
+  font-size: 16px;
+}
+@media screen and (min-width: 768px) {
+  .header-nav-lvl2-link {
+  font-size: inherit;
+}
+
+}
+.header-nav-lvl2-link:hover {
+  text-decoration: none;
+  outline: none;
+  color: #cccccc;
+}
+.header-nav-lvl2-link:hover:focus {
+  text-decoration: none;
+  outline: none;
+  color: #cccccc;
+}
+.header-nav-lvl2-link:focus:active {
+  text-decoration: none;
+  outline: none;
+  color: #cccccc;
+}
+.header-nav-lvl2-link:focus {
+  text-decoration: none;
+  color: #cccccc;
+}
+.header-nav .nav-dropdown {
+  position: relative;
+}
+@media screen and (min-width: 992px) {
+  .header-nav .nav-dropdown:hover .header-nav-lvl2 {
+  display: block;
+}
+
+}
+.header-nav-lvl2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  float: left;
+  list-style: none;
+  text-align: left;
+  background-color: #333333;
+  border-width: 1px;
+  border-top-style: solid;
+  border-color: white;
+  min-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .header-nav-lvl2 {
+  min-width: 150px;
+  z-index: 1;
+}
+
+}
+.header-nav-lvl2 .header-nav-lvl1-link {
+  border-style: none;
+  padding: 10px 15px 10px 15px;
+}
+@media screen and (max-width: 767px) {
+  .header-nav-dropdown-toggle:after {
+  content: '+';
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: -5px;
+}
+
+}
+.header-nav .open > .header-nav-lvl2 {
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .header-nav .open > .header-nav-dropdown-toggle:after {
+  content: '-';
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+}
+.header-nav-selected {
+  font-weight: bold;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+Header Links
+------------------------------------------------------------------------ */
+.header-links-body {
+  cursor: auto;
+  list-style: none;
+}
+@media screen and (min-width: 768px) {
+  .header-links-body {
+  /* override screen.css */
+  
+  background-color: transparent;
+  *zoom: 1;
+  margin-bottom: 20px;
+  float: right;
+  padding: 15px 0 0 0;
+}
+.header-links-body:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.header-links-body:before {
+  content: " ";
+  display: table;
+}
+
+}
+.header-links-body > * {
+  padding: 10px 15px;
+  border-bottom: 1px solid #e5e6e2;
+}
+@media screen and (min-width: 768px) {
+  .header-links-body > * {
+  float: left;
+  padding: 0;
+  border-bottom: none;
+}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .header-links-body > * {
+  padding: 0 0 0 15px;
+  border-bottom: none;
+}
+
+}
+.header-links-body > li {
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .header-links-body > * + * {
+  margin-left: 30px;
+}
+
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .header-links-body > * + * {
+  margin-left: 0;
+}
+
+}
+.header-links-body-item {
+  display: block;
+  height: 18px;
+  cursor: pointer;
+}
+.header-links-body-item:focus {
+  background: #cccccc;
+}
+@media screen and (min-width: 768px) {
+  .header-links-body-item {
+  display: block;
+  color: #505050;
+}
+
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+Variables
+------------------------------------------------------------------------ */
+/* ---------------------------------------------------------------------
+Header Banner component
+------------------------------------------------------------------------ */
+.header-banner {
+  height: 45px;
+}
+.header-banner-theme {
+  background-color: #000000;
+  width: 100%;
+  height: 100%;
+}
+.header-banner-body {
+  margin: 0 auto;
+  clear: both;
+  height: 100%;
+}
+.header-banner-logo-anchor {
+  display: block;
+  float: left;
+  height: 100%;
+  width: 84px;
+}
+@media screen and (min-width: 768px) {
+  .header-banner-logo-anchor {
+  width: 112px;
+}
+
+}
+.header-banner-logo-img {
+  display: block;
+  float: left;
+  max-height: 100%;
+  cursor: pointer;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  /* IE 9 */
+
+  -webkit-transform: translateY(-50%);
+  /* Opera, Chrome, and Safari */
+
+  width: 84px;
+  height: 14px;
+}
+@media screen and (min-width: 768px) {
+  .header-banner-logo-img {
+  width: 112px;
+  height: 18px;
+}
+
+}
+.header-banner-tagline {
+  position: absolute;
+  left: 0;
+  top: -9999px;
+}
+@media screen and (min-width: 768px) {
+  .header-banner-tagline {
+  position: static;
+  display: block;
+  margin-top: 13px;
+  float: right;
+  width: 137px;
+  height: 13px;
+  background: transparent url(components/content/header-banner/assets/images/always-learning.png) no-repeat 0 5px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  *text-indent: 0;
+  *font-size: 0;
+}
+
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+FUNCTION PANEL CSS
+------------------------------------------------------------------------ */
+.function-panel {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .function-panel {
+  margin-bottom: 30px;
+}
+
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+FORM COMPONENT
+------------------------------------------------------------------------ */
+.form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form-field-required {
+  padding-left: 10px;
+}
+.form .check-box-list {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .form .check-box-list {
+  margin-bottom: 30px;
+}
+
+}
+.form .check-box-list label {
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+.form .check-box-list fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.form .check-box-list fieldset legend {
+  font-weight: bold;
+}
+.form .check-box-list fieldset .error-message {
+  font-weight: normal;
+}
+.form .check-box-list .checkbox {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  cursor: pointer;
+}
+.form .check-box-list .checkbox + .checkbox {
+  margin-top: -5px;
+}
+.form .check-box-list .checkbox-inline {
+  margin: 10px 10px 10px 0px;
+}
+.form .check-box-list .help-block {
+  margin-top: 0;
+}
+.form .dropdown-list,
+.form .drilldown {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .form .dropdown-list,
+.form .drilldown {
+  margin-bottom: 30px;
+}
+
+}
+.form .dropdown-list option,
+.form .drilldown option {
+  padding: 6px 0;
+}
+.form .drilldown1 {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .form .drilldown1 {
+  margin-bottom: 30px;
+}
+
+}
+.form .multiline-text-field {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .form .multiline-text-field {
+  margin-bottom: 30px;
+}
+
+}
+.form .multiline-text-field textarea {
+  resize: none;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.form .radio-button-list {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .form .radio-button-list {
+  margin-bottom: 30px;
+}
+
+}
+.form .radio-button-list fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.form .radio-button-list fieldset legend {
+  font-weight: bold;
+}
+.form .radio-button-list fieldset .error-message {
+  font-weight: normal;
+}
+.form .radio-button-list .radio {
+  padding-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: normal;
+  cursor: pointer;
+}
+.form .radio-button-list .radio + .radio {
+  margin-top: -5px;
+}
+.form .radio-button-list .radio-inline {
+  margin: 10px 10px 10px 0px;
+  font-weight: normal;
+}
+.form .radio-button-list .help-block {
+  margin-top: 0;
+}
+.form .submit-button {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .form .submit-button {
+  margin-bottom: 30px;
+}
+
+}
+.form .submit-button button {
+  background-color: white;
+  border: 1px solid #cccccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+.form .submit-button button:hover {
+  cursor: pointer;
+}
+.form .submit-button button:hover,
+.form .submit-button button:focus,
+.form .submit-button button:active {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.form .submit-button button:focus,
+.form .submit-button button:active:focus {
+  outline: thin dotted;
+  outline-offset: -2px;
+}
+.form .text-field {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .form .text-field {
+  margin-bottom: 30px;
+}
+
+}
+.form .has-error .error-message {
+  color: #a94442;
+  font-style: italic;
+  clear: both;
+  display: block;
+  padding-left: 0;
+}
+@media screen and (min-width: 768px) {
+  .form .has-error .error-message {
+  clear: none;
+  display: inline;
+  padding-left: 15px;
+}
+
+}
+.form .has-error option {
+  color: #a94442;
+}
+.form .error-message {
+  display: none;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Forgotten password component.
+------------------------------------------------------------------------ */
+.forgotten-password {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .forgotten-password {
+  margin-bottom: 30px;
+}
+
+}
+.forgotten-password input {
+  margin-bottom: 15px;
+}
+.forgotten-password label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.forgotten-password .message {
+  display: none;
+  margin: 0;
+}
+.forgotten-password .has-message .message {
+  clear: both;
+  display: block;
+  margin-bottom: 15px;
+}
+.forgotten-password .submit-button {
+  margin-top: 5px;
+}
+.forgotten-password .submit-button:hover {
+  cursor: pointer;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+FOOTER CSS
+------------------------------------------------------------------------ */
+.footer {
+  width: 100%;
+  background-color: #333333;
+  overflow: auto;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+  border-bottom: none;
+}
+
+}
+.footer-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+  border-style: none;
+}
+
+}
+.footer-header {
+  width: 100%;
+  color: #999999;
+  clear: both;
+  min-height: 22px;
+  cursor: default;
+}
+.footer-links {
+  width: 100%;
+  cursor: pointer;
+  list-style: none;
+  padding: 2px 0 0;
+  color: #cccccc;
+}
+.footer-links-item {
+  width: 100%;
+  margin: 8px 0 0 0;
+  color: inherit;
+}
+.footer-links-anchor {
+  color: inherit;
+}
+.footer-text {
+  width: 100%;
+  margin-top: 10px;
+  color: #cccccc;
+  cursor: default;
+}
+.footer-text a {
+  color: #cccccc;
+  cursor: pointer;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+EVENTS SUMMARY
+------------------------------------------------------------------------ */
+.events-summary {
+  position: relative;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .events-summary {
+  margin-bottom: 30px;
+}
+
+}
+.events-summary li {
+  list-style-type: none;
+  margin: 0;
+}
+.events-summary time {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.events-summary h6 {
+  margin-bottom: 10px;
+}
+.events-summary p {
+  margin-bottom: 10px;
+}
+.events-summary p a {
+  margin: 0;
+}
+.events-summary a {
+  display: block;
+  margin-bottom: 10px;
+}
+.events-summary .hidden {
+  display: none;
+}
+.events-summary .left {
+  float: left;
+}
+.events-summary .right {
+  float: right;
+}
+.events-summary .item {
+  position: fixed;
+  left: -9999px;
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
+}
+.events-summary .active {
+  opacity: 1;
+  position: relative;
+  left: 0px;
+}
+.events-summary .events-summary-control {
+  cursor: pointer;
+  height: 30px;
+  background-color: #ffffff;
+  outline: 0;
+}
+.events-summary .events-summary-control.left {
+  left: 0;
+}
+.events-summary .events-summary-control.right {
+  right: 0;
+}
+.events-summary .events-summary-indicators {
+  text-align: center;
+}
+.events-summary .events-summary-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 7px 10px 0;
+  text-indent: -999px;
+  border: solid 1px #cccccc;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+.events-summary .events-summary-indicators .active {
+  background-color: #cccccc;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+EVENTS CALENDAR
+------------------------------------------------------------------------ */
+.events-calendar {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .events-calendar {
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+}
+.events-calendar-controls {
+  text-align: center;
+}
+.events-calendar-controls span {
+  display: inline-block;
+  margin-top: 5px;
+}
+.events-calendar-controls button {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+}
+.events-calendar-days,
+.events-calendar-day-headers {
+  clear: both;
+}
+.events-calendar-day-headers .events-calendar-day {
+  color: #990000;
+  float: left;
+  padding: 10px 0 15px;
+  border-bottom: 1px gray solid;
+}
+.events-calendar-day {
+  display: inline-block;
+  position: relative;
+  width: 14.285714285714286%;
+  text-align: center;
+}
+.events-calendar-day a {
+  color: #000000;
+  display: inline-block;
+  width: 40px;
+  max-width: 100%;
+  padding: 11px 0;
+  cursor: pointer;
+  text-decoration: none;
+}
+.events-calendar-day a:hover {
+  background-color: #F5E6E6;
+}
+.events-calendar-day .events-calendar-indicator {
+  display: inline-block;
+  height: 7px;
+  width: 7px;
+  position: absolute;
+  top: calc(100% - 8px);
+  right: calc(50% - 4px);
+  border-radius: 50%;
+  background-color: #000000;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.events-calendar-day.today a {
+  background-color: #cccccc;
+}
+.events-calendar-day.selected a {
+  background-color: #990000;
+  color: #ffffff;
+}
+.events-calendar-day.selected .events-calendar-indicator {
+  background-color: #ffffff;
+}
+.events-calendar-day.not-current a {
+  cursor: default;
+  color: #dddddd;
+}
+.events-calendar-day.not-current a:hover {
+  background-color: #ffffff;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+EVENT LIST
+------------------------------------------------------------------------ */
+.event-list {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .event-list {
+  margin-bottom: 30px;
+}
+
+}
+.event-list li {
+  list-style-type: none;
+  margin: 0;
+}
+.event-list article {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 20px;
+}
+.event-list article img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.event-list a:hover {
+  cursor: pointer;
+}
+.event-list h2 {
+  margin-bottom: 20px;
+}
+.event-list p {
+  margin-bottom: 20px;
+}
+.event-list-time {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .event-list-time {
+  font-size: inherit;
+}
+
+}
+.event-list-time ul {
+  padding-left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .event-list-time ul {
+  padding-left: 40px;
+}
+
+}
+.event-list-time ul li span {
+  padding-left: 4px;
+}
+.event-list-time .fa {
+  font-size: 18px;
+  float: left;
+}
+@media screen and (min-width: 768px) {
+  .event-list-time .fa {
+  font-size: 28px;
+}
+
+}
+.event-list-address {
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .event-list-address {
+  font-size: inherit;
+}
+
+}
+.event-list-address ul {
+  padding-left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .event-list-address ul {
+  padding-left: 40px;
+}
+
+}
+.event-list-address .fa {
+  font-size: 18px;
+  float: left;
+}
+@media screen and (min-width: 768px) {
+  .event-list-address .fa {
+  font-size: 28px;
+}
+
+}
+.event-list-address p {
+  padding-left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .event-list-address p {
+  padding-left: 40px;
+}
+
+}
+.event-list-readmore {
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.event-list nav {
+  min-height: 30px;
+}
+.event-list-nav-left {
+  float: left;
+  font-weight: bold;
+  cursor: pointer;
+}
+.event-list-nav-right {
+  float: right;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+EVENT
+------------------------------------------------------------------------ */
+.event {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .event {
+  margin-bottom: 30px;
+}
+
+}
+.event li {
+  list-style-type: none;
+}
+.event-time {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .event-time {
+  font-size: inherit;
+}
+
+}
+.event-time ul {
+  padding-left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .event-time ul {
+  padding-left: 40px;
+}
+
+}
+.event-time ul li {
+  margin: 0;
+}
+.event-time ul li span {
+  padding-left: 4px;
+}
+.event-time .fa {
+  font-size: 18px;
+  float: left;
+}
+@media screen and (min-width: 768px) {
+  .event-time .fa {
+  font-size: 28px;
+}
+
+}
+.event-address {
+  margin-bottom: 25px;
+}
+@media screen and (min-width: 768px) {
+  .event-address {
+  font-size: inherit;
+}
+
+}
+.event-address ul {
+  padding-left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .event-address ul {
+  padding-left: 40px;
+}
+
+}
+.event-address ul li {
+  margin: 0;
+}
+.event-address .fa {
+  font-size: 18px;
+  float: left;
+}
+@media screen and (min-width: 768px) {
+  .event-address .fa {
+  font-size: 28px;
+}
+
+}
+.event a:hover {
+  cursor: pointer;
+}
+.event h2 {
+  margin-bottom: 10px;
+}
+.event p {
+  margin-bottom: 20px;
+}
+.event img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Dynamic content list.
+------------------------------------------------------------------------ */
+@media screen and (min-width: 768px) {
+  .dynamic-content-list {
+  margin-bottom: 15px;
+}
+
+}
+.dynamic-content-list li {
+  margin: 0 0 20px 0;
+  list-style-type: none;
+}
+.dynamic-content-list-tile-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.dynamic-content-list-tags {
+  list-style: none;
+  overflow: auto;
+}
+.dynamic-content-list-tags li {
+  margin: 0 5px 10px 0;
+  float: left;
+}
+.dynamic-content-list ol {
+  overflow: auto;
+}
+.dynamic-content-list h2 {
+  margin-bottom: 15px;
+}
+.dynamic-content-list article {
+  overflow: auto;
+}
+.dynamic-content-list article a {
+  color: inherit;
+}
+.dynamic-content-list article a:hover {
+  text-decoration: none;
+}
+.dynamic-content-list img {
+  display: block;
+  margin: 0 10px 0 0;
+  float: left;
+}
+.dynamic-content-list div {
+  float: left;
+}
+.dynamic-content-list a + div {
+  margin-left: 0px;
+}
+.dynamic-content-list .no-image {
+  margin-left: 0px;
+  width: 100%;
+}
+.dynamic-content-list time {
+  display: block;
+  margin-bottom: 5px;
+}
+.dynamic-content-list h4 {
+  overflow: hidden;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/*
+ * Cookie Notification
+ */
+.cookie-notification {
+  overflow: hidden;
+  *overflow: visible;
+  *zoom: 1;
+  font-size: 13px;
+  line-height: 1.3636363636363635;
+  background: #000000;
+  color: #ffffff;
+  min-height: 50px;
+  padding: 15px 0;
+}
+.cookie-notification a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+.cookie-notification a:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+CONTENT TILE CSS
+------------------------------------------------------------------------ */
+.content-tile {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .content-tile {
+  margin-bottom: 20px;
+}
+
+}
+.content-tile figure a {
+  color: inherit;
+}
+.content-tile figure a:hover {
+  text-decoration: none;
+}
+.content-tile figure img {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.content-tile-title {
+  font-weight: bold;
+}
+.content-tile-title,
+.content-tile h2,
+.content-tile-text {
+  margin-bottom: 10px;
+}
+.content-tile-subtitle {
+  width: 100%;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.content-tile-tags {
+  list-style: none;
+  overflow: auto;
+}
+.content-tile-tags li {
+  margin: 0 5px 10px 0;
+  float: left;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Content Search Result List Component.
+------------------------------------------------------------------------ */
+.content-search-results-list {
+  overflow: auto;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .content-search-results-list {
+  margin-bottom: 30px;
+}
+
+}
+.content-search-results-list-results {
+  width: 100%;
+  overflow: inherit;
+}
+.content-search-results-list-results li {
+  width: 100%;
+  margin-bottom: 25px;
+  list-style: none;
+  margin-left: 0;
+}
+.content-search-results-list-results img {
+  width: 100%;
+  margin-right: 20px;
+  float: left;
+}
+@media screen and (min-width: 768px) {
+  .content-search-results-list-results img {
+  width: 100%;
+}
+
+}
+.content-search-results-list-results img + div {
+  margin-left: 0px;
+}
+.content-search-results-list-results .no-image {
+  margin-left: 0px;
+  width: 100%;
+}
+.content-search-results-list-results h2 {
+  margin-bottom: 5px;
+}
+.content-search-results-list-results p {
+  margin-bottom: 5px;
+  cursor: default;
+}
+.content-search-results-list .pagination {
+  list-style: none;
+}
+.content-search-results-list .pagination li {
+  float: left;
+  cursor: pointer;
+}
+.content-search-results-list .pagination .active {
+  font-weight: 600;
+}
+.content-search-results-list .numbers {
+  list-style: none;
+}
+.content-search-results-list .numbers li {
+  float: left;
+  cursor: pointer;
+}
+.content-search-results-list .numbers .selected {
+  font-weight: bold;
+}
+.content-search-results-list-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
+.content-search-results-list-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -28px 0 0 -25px;
+}
+.content-search-results-list-highlight {
+  font-weight: bold;
+}
+.content-search-results-list-hideLoader {
+  position: static;
+}
+.content-search-results-list-showLoader {
+  position: relative;
+}
+.content-search-results-list .prev {
+  float: left;
+}
+@media screen and (max-width: 767px) {
+  .content-search-results-list .prev {
+  text-align: center;
+  position: absolute;
+}
+
+}
+.content-search-results-list .current-page {
+  text-align: center;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .content-search-results-list .current-page {
+  display: none;
+}
+
+}
+.content-search-results-list .next {
+  float: left;
+}
+@media screen and (max-width: 767px) {
+  .content-search-results-list .next {
+  text-align: center;
+  position: absolute;
+}
+
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+COLUMN NAVIGATION CSS
+------------------------------------------------------------------------ */
+.column-nav {
+  width: 100%;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .column-nav {
+  margin-bottom: 30px;
+}
+
+}
+.column-nav-lvl1 {
+  list-style: none;
+}
+.column-nav-lvl1 > li {
+  margin: 0;
+  padding: 0;
+}
+.column-nav-lvl1 > li > a {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 30px 15px 10px;
+  border-top: 1px solid #cccccc;
+  color: #333333;
+}
+.column-nav-lvl1 > li > a:hover,
+.column-nav-lvl1 > li > a:focus {
+  text-decoration: none;
+  color: #000000;
+  outline: 0;
+}
+@media screen and (min-width: 768px) {
+  .column-nav-lvl1 > li > a {
+  padding: 25px 35px 25px 30px;
+}
+
+}
+.column-nav-lvl2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  float: left;
+  list-style: none;
+  text-align: left;
+  background-color: #ffffff;
+  min-width: 100%;
+}
+.column-nav-lvl2 > li {
+  margin: 0;
+}
+.column-nav-lvl2 > li > a {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 30px 15px 10px;
+  border-top: 1px solid #cccccc;
+  color: #333333;
+  padding-left: 20px;
+}
+.column-nav-lvl2 > li > a:hover,
+.column-nav-lvl2 > li > a:focus {
+  text-decoration: none;
+  color: #000000;
+  outline: 0;
+}
+@media screen and (min-width: 768px) {
+  .column-nav-lvl2 > li > a {
+  padding: 25px 35px 25px 30px;
+}
+
+}
+@media screen and (min-width: 768px) {
+  .column-nav-lvl2 > li > a {
+  padding-left: 45px;
+}
+
+}
+.column-nav-lvl3 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  float: left;
+  list-style: none;
+  text-align: left;
+  background-color: #ffffff;
+  min-width: 100%;
+}
+.column-nav-lvl3 > li {
+  margin: 0;
+}
+.column-nav-lvl3 > li > a {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  padding: 15px 30px 15px 10px;
+  border-top: 1px solid #cccccc;
+  color: #333333;
+  padding-left: 30px;
+}
+.column-nav-lvl3 > li > a:hover,
+.column-nav-lvl3 > li > a:focus {
+  text-decoration: none;
+  color: #000000;
+  outline: 0;
+}
+@media screen and (min-width: 768px) {
+  .column-nav-lvl3 > li > a {
+  padding: 25px 35px 25px 30px;
+}
+
+}
+@media screen and (min-width: 768px) {
+  .column-nav-lvl3 > li > a {
+  padding-left: 60px;
+}
+
+}
+.column-nav-dropdown {
+  position: relative;
+}
+.column-nav-toggle {
+  display: inline-block;
+  float: right;
+  padding: 15px;
+  margin-top: -11px;
+  margin-right: -30px;
+  background: transparent;
+}
+@media screen and (min-width: 768px) {
+  .column-nav-toggle {
+  padding: 10px;
+  margin-top: -8px;
+  margin-right: -20px;
+}
+
+}
+.column-nav-highlight {
+  background-color: #cccccc;
+  border-top: 1px solid #ffffff !important;
+}
+.column-nav .open > a {
+  font-weight: bold;
+}
+.column-nav .open > .column-nav-lvl1,
+.column-nav .open > .column-nav-lvl2,
+.column-nav .open > .column-nav-lvl3 {
+  position: static;
+  float: none;
+  width: auto;
+  margin-top: 0;
+  display: block;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Child page list component.
+------------------------------------------------------------------------ */
+.child-page-list {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .child-page-list {
+  margin-bottom: 30px;
+}
+
+}
+.child-page-list ul {
+  overflow: hidden;
+}
+.child-page-list ul,
+.child-page-list ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.child-page-list li {
+  line-height: 30px;
+  position: relative;
+  margin: 0 0 0 5px;
+}
+.child-page-list li ol {
+  padding-left: 15px;
+}
+.child-page-list-expand-collapse-button {
+  float: right;
+  padding: 8px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+Carousel
+------------------------------------------------------------------------ */
+.carousel {
+  position: relative;
+  padding: 0px 0px 40px;
+  margin-bottom: 15px;
+  min-height: 100px;
+}
+@media screen and (min-width: 768px) {
+  .carousel {
+  padding: 0px;
+  margin-bottom: 30px;
+}
+
+}
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.carousel-inner > .item {
+  position: fixed;
+  left: -9999px;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
+}
+.carousel-inner .active {
+  opacity: 1;
+  position: relative;
+  left: 0px;
+}
+.carousel-inner img {
+  width: 100%;
+  overflow: auto;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .carousel-inner img {
+  min-height: 190px;
+}
+
+}
+.carousel-anchor {
+  display: block;
+  width: 100%;
+  clear: both;
+  cursor: pointer;
+  color: inherit;
+}
+.carousel-anchor:hover {
+  text-decoration: none;
+}
+.carousel-caption {
+  width: 100%;
+  overflow: auto;
+  margin-top: 10px;
+  color: black;
+}
+@media screen and (min-width: 768px) {
+  .carousel-caption {
+  width: 50%;
+  position: absolute;
+  top: 0px;
+  margin-top: 20px;
+  padding-bottom: 30px;
+}
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .carousel-caption {
+  width: 70%;
+}
+
+}
+.carousel-no-image {
+  position: relative;
+}
+.carousel-title {
+  width: 100%;
+  display: block;
+  text-align: left;
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .carousel-title {
+  width: 80%;
+}
+
+}
+.carousel-text {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+  clear: both;
+  overflow: hidden;
+}
+@media screen and (min-width: 768px) {
+  .carousel-text {
+  width: 80%;
+}
+
+}
+.carousel-control {
+  display: none;
+  background: none;
+}
+@media screen and (min-width: 768px) {
+  .carousel-control {
+  position: absolute;
+  top: calc(-20px - -50%);
+  left: 15px;
+}
+.carousel-control.left {
+  font-size: 40px;
+  cursor: pointer;
+}
+.carousel-control.right {
+  font-size: 40px;
+  left: auto;
+  right: 15px;
+  cursor: pointer;
+}
+
+}
+.carousel-indicators {
+  position: absolute;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  bottom: 0px;
+  margin: 0 0 0 -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+  bottom: 10px;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  text-indent: -999px;
+  border: solid 1px #000000;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #cccccc;
+}
+.carousel-indicators .active {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  background-color: #000000;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+Breadcrumb
+------------------------------------------------------------------------ */
+.breadcrumb {
+  overflow: auto;
+  max-width: 100%;
+  margin-bottom: 5px;
+  color: #555555;
+}
+@media screen and (min-width: 768px) {
+  .breadcrumb {
+  margin-bottom: 20px;
+}
+
+}
+.breadcrumb li {
+  margin-left: 0;
+  list-style-type: none;
+  float: left;
+  margin-bottom: 10px;
+}
+.breadcrumb a {
+  margin-right: 10px;
+  float: left;
+  cursor: pointer;
+  color: #555555;
+}
+.breadcrumb a:hover {
+  color: #333333;
+}
+.breadcrumb p {
+  margin-right: 10px;
+  float: left;
+  cursor: default;
+}
+.breadcrumb span {
+  padding-right: 10px;
+  float: left;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+BLOG POST CSS
+------------------------------------------------------------------------ */
+.blog-post {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .blog-post {
+  margin-bottom: 30px;
+}
+
+}
+.blog-post header {
+  overflow: auto;
+  padding-bottom: 15px;
+}
+.blog-post header img {
+  width: 50px;
+  float: right;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .blog-post header img {
+  width: 60px;
+}
+
+}
+.blog-post header p {
+  float: left;
+  margin-bottom: 0;
+}
+.blog-post header span {
+  padding-left: 4px;
+}
+.blog-post h1 {
+  width: calc(-55px - -100%);
+  float: left;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .blog-post h1 {
+  width: calc(-65px - -100%);
+}
+
+}
+.blog-post img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.blog-post p {
+  margin-bottom: 15px;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+BLOG-LIST CSS
+------------------------------------------------------------------------ */
+.blog-list {
+  max-width: 100%;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .blog-list {
+  margin-bottom: 30px;
+}
+
+}
+.blog-list li {
+  list-style-type: none;
+  margin: 0;
+}
+.blog-list article {
+  border-bottom: 1px solid #cccccc;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .blog-list article {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+}
+.blog-list article img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+.blog-list header {
+  overflow: auto;
+  padding-bottom: 10px;
+}
+.blog-list header img {
+  width: 50px;
+  float: right;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .blog-list header img {
+  width: 60px;
+}
+
+}
+.blog-list header p {
+  float: left;
+  margin-bottom: 0;
+}
+.blog-list header span {
+  padding-left: 4px;
+}
+.blog-list h2 {
+  width: calc(-55px - -100%);
+  float: left;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .blog-list h2 {
+  width: calc(-65px - -100%);
+}
+
+}
+.blog-list p {
+  margin-bottom: 10px;
+}
+.blog-list-readmore {
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.blog-list nav {
+  min-height: 30px;
+}
+.blog-list-nav-left {
+  float: left;
+  font-weight: bold;
+  cursor: pointer;
+}
+.blog-list-nav-right {
+  float: right;
+  font-weight: bold;
+  cursor: pointer;
+}
+.blog-list-feed {
+  color: #ffa500;
+  cursor: pointer;
+  font-size: 28px;
+  display: inline-block;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.blog-list-feed:hover {
+  text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .blog-list-feed {
+  margin-top: 50px;
+}
+
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+AUTHOR LIST CSS
+------------------------------------------------------------------------ */
+.author-list {
+  max-width: 100%;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .author-list {
+  margin-bottom: 30px;
+}
+
+}
+.author-list h3 {
+  margin-bottom: 15px;
+}
+.author-list li {
+  margin-left: 0;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+.author-list .selected {
+  font-weight: bold;
+}
+.author-list a {
+  cursor: pointer;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+ARTICLE CSS
+------------------------------------------------------------------------ */
+.article {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .article {
+  margin-bottom: 30px;
+}
+
+}
+.article h1 {
+  margin-bottom: 15px;
+}
+.article img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.article p {
+  margin-bottom: 14px;
+}
+.article p:last-child {
+  margin-bottom: 15px;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+ARCHIVE LIST CSS
+------------------------------------------------------------------------ */
+.archive-list {
+  max-width: 100%;
+  overflow: auto;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .archive-list {
+  margin-bottom: 30px;
+}
+
+}
+.archive-list h3 {
+  margin-bottom: 15px;
+}
+.archive-list li {
+  margin-left: 0;
+  margin-bottom: 15px;
+  list-style-type: none;
+}
+.archive-list .selected {
+  font-weight: bold;
+}
+.archive-list a {
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+
+    Accordion component.
+------------------------------------------------------------------------ */
+.accordion {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .accordion {
+  margin-bottom: 30px;
+}
+
+}
+.accordion-panel-header {
+  cursor: pointer;
+}
+.accordion-panel-header a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+.accordion-panel-header a:hover {
+  text-decoration: none;
+}
+.accordion-panel-content {
+  border: 1px solid #c6c6c6;
+}
+.accordion-panel-show {
+  position: static;
+}
+.accordion-panel-hide {
+  left: -9999px;
+  position: absolute;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Virtual Parsys
+------------------------------------------------------------------------ */
+.virtual-parsys {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .virtual-parsys {
+  margin-bottom: 30px;
+}
+
+}
+.virtual-parsys-wrapper {
+  border: 1px solid red;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Shopping cart.
+------------------------------------------------------------------------ */
+.shopping-cart {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .shopping-cart {
+  margin-bottom: 30px;
+}
+
+}
+.shopping-cart h3 {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .shopping-cart h3 {
+  margin-bottom: 30px;
+}
+
+}
+.shopping-cart-error-message {
+  margin-bottom: 15px;
+  display: none;
+}
+.shopping-cart-error-message.has-error {
+  display: block;
+}
+.shopping-cart-navigation {
+  display: none;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .shopping-cart-navigation {
+  margin-bottom: 30px;
+  display: block;
+}
+
+}
+.shopping-cart-navigation:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart .mobile-only {
+  display: block;
+}
+
+}
+.shopping-cart-back:hover,
+.shopping-cart-checkout:hover {
+  text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-back span,
+.shopping-cart-checkout span {
+  display: none;
+}
+
+}
+.shopping-cart-back {
+  float: left;
+}
+.shopping-cart-back span {
+  margin-right: 5px;
+}
+.shopping-cart-checkout {
+  float: right;
+}
+.shopping-cart-checkout span {
+  margin-left: 5px;
+}
+.shopping-cart-product-image {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-product-image {
+  margin-bottom: 0;
+}
+
+}
+.shopping-cart h5 {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart h5 {
+  margin-bottom: 0;
+}
+
+}
+.shopping-cart table {
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart th {
+  display: none;
+}
+
+}
+.shopping-cart td {
+  vertical-align: top;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart td:first-child {
+  display: block;
+}
+
+}
+.shopping-cart-quantity label {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-quantity label {
+  margin-right: 10px;
+}
+
+}
+.shopping-cart-product-title,
+.shopping-cart-product-code {
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-product-unit-price {
+  display: none;
+}
+
+}
+.shopping-cart .product-attribute-multivalue-list {
+  clear: both;
+}
+.shopping-cart .product-attribute-multivalue-list li {
+  margin: 0;
+  display: inline;
+}
+.shopping-cart .product-attribute-multivalue-list p {
+  display: inline-block;
+}
+.shopping-cart [class^="image-"],
+.shopping-cart [class^="attribute-"] {
+  display: block;
+  margin-bottom: 5px;
+}
+.shopping-cart [class^="image-"] {
+  max-width: 100%;
+}
+.shopping-cart input {
+  margin: 0 auto 15px auto;
+}
+.shopping-cart input::-webkit-inner-spin-button,
+.shopping-cart input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart input {
+  margin: 0;
+  float: right;
+}
+
+}
+.shopping-cart-product-update,
+.shopping-cart-product-delete {
+  clear: both;
+  display: block;
+  margin: auto;
+  cursor: pointer;
+}
+.shopping-cart-product-update span,
+.shopping-cart-product-delete span {
+  margin-right: 5px;
+}
+.shopping-cart-product-update {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-product-update {
+  display: none;
+}
+
+}
+.shopping-cart-product-delete {
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-product-delete {
+  margin-top: 5px;
+}
+
+}
+.shopping-cart-final-prices {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .shopping-cart-final-prices {
+  margin-bottom: 30px;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-final-prices td:first-child {
+  display: table-cell;
+}
+
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Product title
+------------------------------------------------------------------------ */
+.product-title {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .product-title {
+  margin-bottom: 30px;
+}
+
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Product search results sort.
+------------------------------------------------------------------------ */
+.product-search-results-sort {
+  overflow: auto;
+  margin-bottom: 15px;
+}
+.product-search-results-sort-btn-list {
+  width: 100%;
+}
+.product-search-results-sort-btn-list li {
+  list-style-type: none;
+  display: inline;
+  margin-left: 0px;
+}
+.product-search-results-sort-label {
+  padding: 8px;
+  min-width: 10%;
+}
+@media screen and (max-width: 992px) {
+  .product-search-results-sort {
+  margin-bottom: 30px;
+}
+.product-search-results-sort-btn {
+  width: 100%;
+}
+
+}
+.product-search-results-sort-control {
+  width: 70%;
+}
+.product-search-results-sort-wrapper {
+  float: left;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Product search results list.
+------------------------------------------------------------------------ */
+.product-search-results-list {
+  overflow: auto;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .product-search-results-list {
+  margin-bottom: 30px;
+}
+
+}
+.product-search-results-list li {
+  overflow: auto;
+  list-style: none;
+  margin-left: 0;
+}
+.product-search-results-list article {
+  overflow: auto;
+}
+.product-search-results-list a {
+  cursor: pointer;
+}
+.product-search-results-list p {
+  cursor: default;
+}
+.product-search-results-list img {
+  float: left;
+}
+.product-search-results-list-authors li {
+  display: inline-block;
+  overflow: visible;
+}
+.product-search-results-list .no-image {
+  margin-left: 0px;
+  width: 100%;
+}
+.product-search-results-list-pages-container {
+  overflow: auto;
+  -ms-overflow-style: none;
+  text-align: center;
+  min-height: 50px;
+}
+.product-search-results-list-pages-container nav {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .product-search-results-list-pages-container nav {
+  display: inline-block;
+}
+
+}
+.product-search-results-list-pages-container ol {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .product-search-results-list-pages-container ol {
+  overflow: auto;
+  float: left;
+  display: block;
+}
+
+}
+.product-search-results-list-pages-container li {
+  float: left;
+}
+.product-search-results-list-pages-container .prev {
+  float: left;
+}
+@media screen and (max-width: 767px) {
+  .product-search-results-list-pages-container .prev {
+  text-align: center;
+  position: absolute;
+}
+
+}
+.product-search-results-list-pages-container .current-page {
+  text-align: center;
+  position: absolute;
+}
+@media screen and (min-width: 768px) {
+  .product-search-results-list-pages-container .current-page {
+  display: none;
+}
+
+}
+.product-search-results-list-pages-container .next {
+  float: left;
+}
+@media screen and (max-width: 767px) {
+  .product-search-results-list-pages-container .next {
+  text-align: center;
+  position: absolute;
+}
+
+}
+.product-search-results-list select {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+        PEARSON MARKETING CLOUD
+      _______________________
+
+        Product search results count.
+------------------------------------------------------------------------ */
+.product-search-results-count {
+  margin-bottom: 30px;
+  overflow: auto;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .product-search-results-count {
+  margin-bottom: 15px;
+}
+
+}
+.product-search-results-count-value {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Product image gallery component.
+------------------------------------------------------------------------ */
+.product-image-gallery {
+  position: relative;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .product-image-gallery {
+  margin-bottom: 30px;
+}
+
+}
+.product-image-gallery-inner {
+  position: relative;
+  overflow: hidden;
+}
+.product-image-gallery-inner .item {
+  position: fixed;
+  left: -9999px;
+  opacity: 0;
+  margin: 0;
+  -webkit-transition: opacity 2s;
+  -moz-transition: opacity 2s;
+  -ms-transition: opacity 2s;
+  -o-transition: opacity 2s;
+  transition: opacity 2s;
+}
+.product-image-gallery-inner .active {
+  opacity: 1;
+  position: relative;
+  left: 0px;
+}
+.product-image-gallery-inner img {
+  width: 100%;
+  overflow: auto;
+  display: block;
+}
+.product-image-gallery ul {
+  list-style: none;
+}
+.product-image-gallery-control {
+  display: none;
+  position: absolute;
+  z-index: 999;
+}
+.product-image-gallery-control:hover {
+  text-decoration: none;
+}
+.product-image-gallery-control:focus {
+  outline: none;
+}
+@media screen and (min-width: 768px) {
+  .product-image-gallery-control.left {
+  left: 0;
+}
+.product-image-gallery-control.right {
+  right: 0;
+}
+
+}
+.product-image-gallery-indicators {
+  overflow: hidden;
+}
+.product-image-gallery-indicators li {
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+.product-image-gallery-modal-icon {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  cursor: pointer;
+}
+.product-image-gallery-modal-icon:focus {
+  outline: none;
+}
+.product-image-gallery-modal-icon.open {
+  right: 15px;
+  top: 15px;
+}
+.product-image-gallery-modal-icon.close {
+  right: -40px;
+  top: -40px;
+}
+.product-image-gallery-modal-container {
+  border: none;
+  padding: 0;
+  border-radius: 0px;
+  margin: 0px;
+  overflow: inherit;
+  z-index: 10000!important;
+  width: 84%!important;
+  left: 8%!important;
+  top: 50px!important;
+}
+.product-image-gallery-modal-container.ui-widget .open {
+  display: none!important;
+}
+.product-image-gallery-modal-container.ui-widget .close {
+  display: block;
+}
+.product-image-gallery-modal-container .product-image-gallery-container {
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+  outline: none;
+}
+.product-image-gallery-modal-container .product-image-gallery-inner li {
+  display: inline-block;
+}
+.product-image-gallery-modal-container .product-image-gallery-inner img {
+  width: auto;
+  max-width: 80%;
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .product-image-gallery-modal-container + .ui-widget-overlay {
+  display: none!important;
+}
+
+}
+.product-image-gallery-modal {
+  width: 100% !important;
+  height: 100% !important;
+  padding: 0px !important;
+  overflow: visible!important;
+  display: none;
+}
+.product-image-gallery .swipe-image {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  color: white;
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .product-image-gallery .swipe-image {
+  display: table;
+}
+
+}
+.product-image-gallery .swipe-image div {
+  display: table-cell;
+  vertical-align: middle;
+}
+.product-image-gallery .swipe-image img {
+  width: 200px;
+  height: 218.666666666px;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Product image
+------------------------------------------------------------------------ */
+.product-image {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .product-image {
+  margin-bottom: 30px;
+}
+
+}
+.product-image img {
+  width: 100%;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Product facets
+------------------------------------------------------------------------ */
+.product-facets {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .product-facets {
+  margin-bottom: 30px;
+}
+
+}
+.product-facets-group-hide {
+  display: none;
+}
+.product-facets-group-show {
+  display: block;
+}
+.product-facets-group-header span {
+  float: right;
+}
+.product-facets-group-header a:before {
+  content: "" !important;
+}
+.product-facets-selected-delete-icon {
+  cursor: pointer;
+  padding: 5px;
+  float: right;
+}
+.product-facets-selected-title {
+  display: inline-block;
+}
+.product-facets-selected-list-item a:before {
+  content: "\f00d" !important;
+}
+.product-facets-selected-list-item:last-child {
+  padding-bottom: 20px;
+}
+.product-facets ul {
+  overflow: auto;
+}
+.product-facets li {
+  list-style-type: none;
+  margin: 0;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Product category component.
+------------------------------------------------------------------------ */
+.product-category {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .product-category {
+  margin-bottom: 30px;
+}
+
+}
+.product-category ul {
+  list-style: none;
+  margin: 0 0 0 20px;
+}
+.product-category > ul,
+.product-category li {
+  margin: 0;
+}
+.product-category a {
+  display: inline-block;
+}
+.product-category a:hover {
+  text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Product attribute
+------------------------------------------------------------------------ */
+.product-attribute {
+  margin-bottom: 15px;
+}
+.product-attribute p {
+  display: inline;
+}
+.product-attribute-label {
+  font-weight: bold;
+}
+.product-attribute a {
+  cursor: pointer;
+}
+.product-attribute-multivalue-list {
+  clear: both;
+}
+.product-attribute-multivalue-list li {
+  margin: 0;
+  display: inline;
+}
+.product-attribute-multivalue-list p {
+  display: inline-block;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Payment options component
+------------------------------------------------------------------------ */
+.payment-options fieldset {
+  margin-bottom: 10px;
+}
+.payment-options fieldset .parsley-errors-list {
+  margin-top: 10px;
+}
+.payment-options input[type="radio"] {
+  float: left;
+}
+.payment-options .radio {
+  display: block;
+  margin: 0 0 20px 20px;
+}
+.payment-options input[type="text"] {
+  display: none;
+  margin: 0 0 10px 20px;
+}
+.payment-options-iframe-container {
+  display: none;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .payment-options-iframe-container {
+  margin-bottom: 30px;
+}
+
+}
+.payment-options iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Order summary component
+------------------------------------------------------------------------ */
+.order-summary-product-image {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+@media screen and (max-width: 767px) {
+  .order-summary-product-image {
+  margin-bottom: 0;
+}
+
+}
+.order-summary h5 {
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .order-summary h5 {
+  margin-bottom: 0;
+}
+
+}
+.order-summary table {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .order-summary table {
+  margin-bottom: 30px;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .order-summary th {
+  display: none;
+}
+
+}
+.order-summary td {
+  vertical-align: top;
+}
+@media screen and (max-width: 767px) {
+  .order-summary-product-details,
+.order-summary-product-code {
+  display: block;
+}
+
+}
+.order-summary-product-title,
+.order-summary-product-code {
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 767px) {
+  .order-summary-product-unit-price {
+  display: none;
+}
+
+}
+.order-summary .product-attribute-multivalue-list {
+  clear: both;
+}
+.order-summary .product-attribute-multivalue-list li {
+  margin: 0;
+  display: inline;
+}
+.order-summary .product-attribute-multivalue-list p {
+  display: inline-block;
+}
+.order-summary [class^="image-"],
+.order-summary [class^="attribute-"] {
+  display: block;
+  margin-bottom: 5px;
+}
+.order-summary [class^="image-"] {
+  max-width: 100%;
+}
+.order-summary .mobile-only {
+  display: none;
+}
+@media screen and (max-width: 767px) {
+  .order-summary .mobile-only {
+  display: inline-block;
+}
+
+}
+.order-summary-final-prices {
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 767px) {
+  .order-summary-final-prices {
+  border-bottom: 0 !important;
+}
+
+}
+@media screen and (min-width: 768px) {
+  .order-summary-final-prices {
+  margin-bottom: 30px;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .order-summary-final-prices td:first-child {
+  display: table-cell;
+}
+
+}
+.order-summary label,
+.order-summary-terms-and-conditions-heading,
+.order-summary-special-instructions-label,
+.order-summary-sold-to-label,
+.order-summary legend {
+  margin-bottom: 10px;
+}
+.order-summary-sold-to-email,
+.order-summary-sold-to-instructions {
+  margin-bottom: 15px;
+}
+.order-summary-sold-to-details {
+  margin-bottom: 15px;
+}
+.order-summary-terms-and-conditions {
+  margin-bottom: 30px;
+}
+.order-summary-sold-to-first-name,
+.order-summary-sold-to-last-name,
+.order-summary-sold-to-email-address {
+  margin-bottom: 15px;
+}
+.order-summary input[type="checkbox"] {
+  float: left;
+}
+.order-summary-terms-and-conditions-label {
+  display: block;
+}
+.checkout-process-container-expanded-section .order-summary {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .checkout-process-container-expanded-section .order-summary {
+  margin-bottom: 30px;
+}
+
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Order confirmation component
+------------------------------------------------------------------------ */
+.order-confirmation {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .order-confirmation {
+  margin-bottom: 30px;
+}
+
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Mini-cart.
+------------------------------------------------------------------------ */
+.mini-cart {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .mini-cart {
+  margin-bottom: 30px;
+}
+
+}
+.mini-cart-dropdown {
+  display: none;
+}
+.mini-cart-button {
+  display: block;
+  cursor: pointer;
+}
+.mini-cart-button p {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .mini-cart-button p {
+  display: inline-block;
+}
+
+}
+.mini-cart-button .mini-cart-checkout {
+  margin: 0;
+}
+.mini-cart-button .fa-shopping-cart {
+  vertical-align: bottom;
+  margin-right: 5px;
+}
+.mini-cart-link {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .mini-cart-link {
+  display: none;
+}
+
+}
+.mini-cart-child-product-list {
+  clear: both;
+}
+.mini-cart-list {
+  overflow: hidden;
+  overflow-y: auto;
+}
+.mini-cart li {
+  list-style-type: none;
+  margin-left: 0;
+  display: block;
+  margin-bottom: 15px;
+}
+.mini-cart li:last-child {
+  margin-bottom: 0;
+}
+.mini-cart [class^="image-"] {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.mini-cart h5 {
+  float: right;
+  margin-bottom: 10px;
+}
+.mini-cart .attribute-title {
+  margin-bottom: 10px;
+}
+.mini-cart .code {
+  margin-bottom: 10px;
+}
+.mini-cart [class^="price-"] {
+  margin-bottom: 10px;
+}
+.mini-cart [class^="attribute-"] {
+  margin-bottom: 10px;
+}
+.mini-cart input {
+  float: right;
+}
+.mini-cart .fa-plus,
+.mini-cart .fa-minus {
+  float: right;
+  cursor: pointer;
+}
+.mini-cart-product-delete {
+  clear: both;
+  text-align: right;
+  cursor: pointer;
+}
+.mini-cart table {
+  margin-top: 15px;
+  text-align: right;
+  vertical-align: bottom;
+}
+.mini-cart button {
+  margin-top: 10px;
+  cursor: pointer;
+}
+.mini-cart-view {
+  float: left;
+  margin-right: 5px;
+}
+.mini-cart .mini-cart-checkout {
+  float: right;
+  margin-left: 5px;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Delivery options component
+------------------------------------------------------------------------ */
+.delivery-options fieldset {
+  margin-bottom: 10px;
+}
+.delivery-options fieldset .parsley-errors-list {
+  margin-top: 10px;
+}
+.delivery-options input[type="radio"] {
+  float: left;
+}
+.delivery-options .radio {
+  display: block;
+  margin: 0 0 20px 20px;
+}
+.delivery-options .radio:last-child {
+  margin-bottom: 0;
+}
+.delivery-options textarea {
+  display: none;
+  margin: 10px 0 10px 20px;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Delivery details component
+------------------------------------------------------------------------ */
+.delivery-details h4 {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .delivery-details h4 {
+  margin-bottom: 15px;
+}
+
+}
+.delivery-details [class^="delivery-details-customer-"],
+.delivery-details [class^="delivery-details-address-"] {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Child products list.
+------------------------------------------------------------------------ */
+.child-product-list {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .child-product-list {
+  margin-bottom: 30px;
+}
+
+}
+.child-product-list h3 {
+  margin-bottom: 15px;
+}
+.child-product-list p,
+.child-product-list h6 {
+  margin-bottom: 10px;
+}
+.child-product-list a {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.child-product-list a img {
+  margin-bottom: 0;
+}
+.child-product-list img {
+  display: block;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+.child-product-list li {
+  margin-left: 0;
+  list-style-type: none;
+}
+.child-product-list-item li {
+  margin-bottom: 15px;
+}
+.child-product-list .product-attribute-multivalue-list {
+  clear: both;
+}
+.child-product-list .product-attribute-multivalue-list li {
+  border: none;
+  display: inline;
+}
+.child-product-list .product-attribute-multivalue-list p {
+  display: inline-block;
+}
+.child-product-list .product-attribute-label {
+  display: inline;
+}
+.child-product-list .form-control {
+  margin-bottom: 10px;
+}
+.child-product-list .submit-button {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.child-product-list-message {
+  margin-bottom: 10px;
+}
+@-ms-keyframes spin {
+  from {
+  -ms-transform: rotate(0deg);
+}
+to {
+  -ms-transform: rotate(360deg);
+}
+
+}
+@-moz-keyframes spin {
+  from {
+  -moz-transform: rotate(0deg);
+}
+to {
+  -moz-transform: rotate(360deg);
+}
+
+}
+@-webkit-keyframes spin {
+  from {
+  -webkit-transform: rotate(0deg);
+}
+to {
+  -webkit-transform: rotate(360deg);
+}
+
+}
+@keyframes spin {
+  from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+
+}
+.child-product-list .icon-spin {
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Checkout Process Container component
+------------------------------------------------------------------------ */
+.checkout-process-container {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .checkout-process-container {
+  margin-bottom: 30px;
+}
+
+}
+.checkout-process-container-error-message {
+  margin-bottom: 15px;
+  display: none;
+}
+.checkout-process-container-error-message.has-error {
+  display: block;
+}
+.checkout-process-container li {
+  margin: 0;
+  list-style: none;
+}
+.checkout-process-container .checkout-process-container-continue-button {
+  width: auto;
+  float: right;
+  cursor: pointer;
+  display: none;
+  margin: 20px 15px 15px 0;
+}
+@media screen and (min-width: 768px) {
+  .checkout-process-container .checkout-process-container-continue-button {
+  margin: 20px 15px 30px 0;
+}
+
+}
+.checkout-process-container .checkout-process-container-continue-button span {
+  margin-left: 10px;
+}
+.checkout-process-container-panel-heading {
+  overflow: hidden;
+}
+.checkout-process-container-panel-heading h4 {
+  float: left;
+}
+.checkout-process-container-panel-heading a {
+  display: none;
+  float: right;
+}
+.checkout-process-container-form-section {
+  overflow: hidden;
+  padding: 0 15px;
+}
+@media screen and (min-width: 768px) {
+  .checkout-process-container-form-section {
+  padding: 0 35px;
+}
+
+}
+.checkout-process-container-expanded-section .checkout-process-container-form-data-wrapper > .section:not(.delivery-details):not(.delivery-options):not(.billing-details):not(.order-summary):not(.payment-options) {
+  position: static;
+}
+.checkout-process-container-expanded-section .checkout-process-container-continue-button {
+  display: block;
+}
+.checkout-process-container-panel-changes-enabled .checkout-process-container-edit-button {
+  display: block;
+}
+.checkout-process-container-form-data-wrapper > .section:not(.delivery-details):not(.delivery-options):not(.billing-details):not(.order-summary):not(.payment-options) {
+  position: fixed;
+  left: -9999px;
+  margin: 0 15px;
+}
+.checkout-process-container .error-message {
+  display: none;
+}
+.checkout-process-container .has-error .error-message {
+  display: block;
+  clear: both;
+}
+.checkout-process-container-editable-data,
+.checkout-process-container-readable-data,
+.checkout-process-container form {
+  overflow: hidden;
+}
+.checkout-process-container-readable-data,
+.checkout-process-container-changes-enabled .checkout-process-container-editable-data {
+  display: none;
+}
+.checkout-process-container-changes-enabled .checkout-process-container-readable-data {
+  display: block;
+}
+.checkout-process-container-readable-data {
+  padding: 15px 0;
+}
+@media screen and (min-width: 768px) {
+  .checkout-process-container-readable-data {
+  padding: 30px 0;
+}
+
+}
+.checkout-process-container-readable-data p {
+  overflow: hidden;
+}
+.checkout-process-container-readable-data span {
+  margin-right: 5px;
+  float: left;
+}
+.checkout-process-container-readable-data span:empty {
+  display: none;
+}
+@-ms-keyframes spin {
+  from {
+  -ms-transform: rotate(0deg);
+}
+to {
+  -ms-transform: rotate(360deg);
+}
+
+}
+@-moz-keyframes spin {
+  from {
+  -moz-transform: rotate(0deg);
+}
+to {
+  -moz-transform: rotate(360deg);
+}
+
+}
+@-webkit-keyframes spin {
+  from {
+  -webkit-transform: rotate(0deg);
+}
+to {
+  -webkit-transform: rotate(360deg);
+}
+
+}
+@keyframes spin {
+  from {
+  transform: rotate(0deg);
+}
+to {
+  transform: rotate(360deg);
+}
+
+}
+.checkout-process-container .icon-spin {
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  -webkit-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Billing details component
+------------------------------------------------------------------------ */
+.billing-details-checkbox-checked + .billing-details-form-wrapper {
+  display: none;
+}
+.billing-details-checkbox-checked + .billing-details-tax-exemption-code {
+  display: block;
+}
+.billing-details h4 {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .billing-details h4 {
+  margin-bottom: 15px;
+}
+
+}
+.billing-details [class^="billing-details-customer-"],
+.billing-details [class^="billing-details-address-"] {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.billing-details-copy-address {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .billing-details-copy-address {
+  margin-bottom: 30px;
+}
+
+}
+.billing-details-copy-address .billing-address-checkbox-checked {
+  margin-bottom: 10px;
+}
+.billing-details-tax-exemption-code {
+  display: none;
+  padding: 10px 15px 0 28px;
+}
+.billing-details-same-as-delivery,
+.billing-details-tax-exemption,
+.billing-details-tax-exemption-option,
+.billing-details-copy-address {
+  padding: 0 15px;
+  clear: both;
+}
+.billing-details p[data-tax-exemption="false"] {
+  display: none;
+}
+
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+While adding in css.txt we are not able to access variable from one less file into another. 
+Hence loading all less files in one major less file and including this in css.txt
+------------------------------------------------------------------------ */
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+RESET CSS
+------------------------------------------------------------------------ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+u,
+center,
+dl,
+dt,
+dd,
+button,
+ul,
+ol,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input,
+textarea {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* ---------------------------------------------------------------------
+Base Styles
+------------------------------------------------------------------------ */
+html,
+body {
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: #0089b7;
+}
+a:hover {
+  text-decoration: underline;
+}
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+input:focus::-ms-input-placeholder {
+  color: transparent;
+}
+li {
+  margin: 0 0 0 1.5em;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* Not letting iOS and WinMobile mobile-optimize text for you */
+html {
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+body {
+  font-family: "Open Sans", "Gill Sans", "Gill Sans MT", Calibri, sans-serif, Verdana;
+  font-size: 14px;
+  line-height: 1.30769;
+  color: #333333;
+}
+h1 {
+  font-size: 34px;
+}
+h2 {
+  font-size: 28px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+}
+h6 {
+  font-size: 14px;
+  font-weight: bold;
+}
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+Layout Wrappers
+------------------------------------------------------------------------ */
+.site-hd {
+  position: relative;
+  z-index: 10;
+  /* position above .site-bd */
+
+  *zoom: 1;
+  min-height: 100px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .site-hd {
+  min-height: 90px;
+  margin-bottom: 30px;
+}
+
+}
+.site-bd {
+  display: block;
+  overflow: auto;
+  height: auto;
+  position: relative;
+  z-index: 0;
+  min-height: 350px;
+}
+@media screen and (min-width: 992px) {
+  .site-bd {
+  min-height: 650px;
+}
+
+}
+.site-ft {
+  overflow: auto;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+div.image {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  div.image {
+  margin-bottom: 30px;
+}
+
+}
+div.image img {
+  width: 100%;
+}
+div.title {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  div.title {
+  margin-bottom: 30px;
+}
+
+}
+div.text {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  div.text {
+  margin-bottom: 30px;
+}
+
+}
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+Header
+------------------------------------------------------------------------ */
+body > header {
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  body > header {
+  margin-bottom: 30px;
+}
+
+}
+body > header section.column-control {
+  position: relative;
+  min-height: 50px;
+  background-color: #333333;
+}
+.header {
+  position: relative;
+}
+.box-shadow {
+  -webkit-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+}
+.header a:focus {
+  -webkit-box-shadow: 0 0 0 transparent;
+  -moz-box-shadow: 0 0 0 transparent;
+  box-shadow: 0 0 0 transparent;
+}
+.header-body {
+  position: relative;
+  min-height: 50px;
+  background-color: #333333;
+  border-bottom: 1px solid #333333;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+
+    Accordion component.
+------------------------------------------------------------------------ */
+.accordion {
+  padding: 15px 15px 0;
+}
+.accordion-panel-header {
+  padding: 14px 12px;
+  background: #666666;
+  color: #ffffff;
+  font-size: 14px;
+  text-align: left;
+}
+.accordion-panel-content {
+  padding: 15px;
+}
+.accordion-panel-header + .accordion-panel-content * {
+  margin: 0;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Billing details component
+------------------------------------------------------------------------ */
+.billing-details label {
+  position: absolute;
+  text-indent: -9999px;
+}
+.billing-details-copy-address label,
+.billing-details-tax-exemption-option label {
+  position: static;
+  text-indent: 0;
+}
+.billing-details-country-code,
+.billing-details-phone-number,
+.billing-details-customer-title select,
+.billing-details-address-postal-code input {
+  width: 48%;
+  float: left;
+}
+.billing-details-tax-exemption-code {
+  width: 50%;
+}
+.billing-details-phone-number {
+  margin-left: 4%;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Child Page List Component.
+------------------------------------------------------------------------ */
+.child-page-list ul {
+  border-bottom: 1px solid #797979;
+}
+.child-page-list a {
+  text-decoration: none;
+}
+.child-page-list li:after {
+  position: absolute;
+  content: "";
+  border-top: 1px solid #797979;
+  z-index: -1;
+  right: -45px;
+  left: -45px;
+  top: 0;
+}
+.child-page-list-level-1 {
+  border-left: 1px solid #797979;
+  border-right: 1px solid #797979;
+}
+.child-page-list-level-1 > li {
+  font-weight: bold;
+  color: #0089B7;
+}
+.child-page-list-level-2 > li {
+  font-weight: normal;
+}
+.child-page-list-level-3 > li {
+  font-weight: normal;
+}
+.child-page-list-current-page {
+  font-weight: bold;
+  color: black;
+}
+.child-page-list h4 {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Child products list.
+------------------------------------------------------------------------ */
+.child-product-list-item li {
+  padding-bottom: 5px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px solid #cccccc;
+  width: 100%;
+  min-height: 95px;
+}
+.child-product-list [class^="price-"] {
+  text-align: right;
+  font-weight: bold;
+  width: calc(-75px - -40%);
+  padding-top: 2px;
+  position: absolute;
+  top: 0;
+  right: 60px;
+}
+.child-product-list [class^="image-"],
+.child-product-list .product-attribute-label,
+.child-product-list a,
+.child-product-list .code,
+.child-product-list h6 {
+  width: 60%;
+  float: left;
+}
+.child-product-list a [class^="image-"] {
+  width: 100%;
+}
+.child-product-list [class^="attribute-"] {
+  width: 60%;
+  float: left;
+}
+.child-product-list .attribute-shortdescription {
+  font-size: 12px;
+}
+.child-product-list .code {
+  font-style: italic;
+}
+.child-product-list input {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50px;
+  height: 25px;
+  padding: 0 0 0 6px;
+  border-radius: 0;
+  border-color: #797979;
+}
+.child-product-list .add-to-cart {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  width: calc(-15px - -40%);
+  max-width: 200px;
+}
+.child-product-list .submit-button {
+  background-color: white;
+  border: 1px solid #797979;
+  padding: 6px 12px;
+}
+.child-product-list .submit-button span {
+  margin-left: 5px;
+  color: #999999;
+}
+.child-product-list-message {
+  font-size: 12px;
+  margin-top: 90px;
+  padding: 10px 10px 0 10px;
+  clear: both;
+  overflow: auto;
+}
+.child-product-list-message .submit-button {
+  font-size: 14px;
+  width: auto;
+  color: #333333;
+}
+.child-product-list-message .submit-button:hover {
+  text-decoration: none;
+}
+.child-product-list .message-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.child-product-list .message-title:before {
+  color: #333;
+  font-size: 12px;
+  font-family: Fontawesome;
+  padding-right: 5px;
+}
+.child-product-list .success {
+  background-color: #E1F0D9;
+  border: 1px solid #339900;
+}
+.child-product-list .success .message-title:before {
+  content: '\f00c';
+}
+.child-product-list .error {
+  background-color: #F0D9D9;
+  border: 1px solid #990000;
+}
+.child-product-list .error .message-title:before {
+  content: '\f071';
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Content tile component.
+------------------------------------------------------------------------ */
+.content-tile-tags li {
+  color: #ffffff;
+  background-color: #0089b7;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    content Search Results List
+------------------------------------------------------------------------ */
+.content-search-results-list-overlay {
+  background: #ECECEC;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.content-search-results-list-loading {
+  font-size: 30px;
+  color: black;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Checkout Process Container component
+------------------------------------------------------------------------ */
+.checkout-process-container h4 {
+  font-size: 16px;
+}
+.checkout-process-container-error-message {
+  color: #a94442;
+  font-style: italic;
+  font-size: 14px;
+}
+.checkout-process-container-panel-heading {
+  background: #666666;
+  padding: 15px;
+}
+.checkout-process-container-panel-heading h4 {
+  color: white;
+}
+.checkout-process-container-panel-heading a {
+  color: white;
+  text-decoration: underline;
+}
+.checkout-process-container-continue-button {
+  background: #339900;
+  border: 1px solid #006600;
+  padding: 10px 15px;
+  color: #ffffff;
+}
+.checkout-process-container-list {
+  border: 1px solid #e4e4e4;
+}
+.checkout-process-container-list > li {
+  border-top: 1px solid #e4e4e4;
+}
+.checkout-process-container-list > li:first-child {
+  border-top: none;
+}
+.checkout-process-container .form-control {
+  padding: 5px;
+}
+.checkout-process-container select.form-control {
+  padding: 2px;
+}
+.checkout-process-container .parsley-errors-list {
+  padding-top: 2px;
+}
+.checkout-process-container-expanded-section .checkout-process-container-editable-data {
+  padding-top: 15px;
+}
+@media screen and (min-width: 768px) {
+  .checkout-process-container-expanded-section .checkout-process-container-editable-data {
+  padding-top: 30px;
+}
+
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Delivery details component
+------------------------------------------------------------------------ */
+.delivery-details label {
+  position: absolute;
+  text-indent: -9999px;
+}
+.delivery-details-country-code,
+.delivery-details-phone-number,
+.delivery-details-customer-title select,
+.delivery-details-address-postal-code input {
+  width: 48%;
+  float: left;
+}
+.delivery-details-phone-number {
+  margin-left: 4%;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Delivery options component
+------------------------------------------------------------------------ */
+.delivery-options {
+  padding: 0 15px;
+}
+.delivery-options legend {
+  display: none;
+}
+.delivery-options .radio {
+  cursor: pointer;
+}
+.delivery-options textarea {
+  height: 80px;
+  resize: none;
+  width: calc(-20px - -100%);
+}
+.delivery-options .parsley-errors-list {
+  padding-left: 20px;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Dynamic content list component.
+------------------------------------------------------------------------ */
+.dynamic-content-list-tags li {
+  color: #ffffff;
+  background-color: #0089b7;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.dynamic-content-list img {
+  width: 60px;
+  height: 60px;
+}
+@media screen and (min-width: 992px) {
+  .dynamic-content-list img {
+  width: 100px;
+  height: 100px;
+}
+
+}
+.dynamic-content-list div {
+  width: calc(-70px - -100%);
+  margin-left: 70px;
+}
+@media screen and (min-width: 992px) {
+  .dynamic-content-list div {
+  width: calc(-110px - -100%);
+}
+
+}
+@media screen and (min-width: 992px) {
+  .dynamic-content-list div {
+  margin-left: 110px;
+}
+
+}
+.dynamic-content-list h4 {
+  max-height: 69px;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Link list component.
+------------------------------------------------------------------------ */
+.link-list-tags li {
+  color: #ffffff;
+  background-color: #0089b7;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Locale selection component.
+------------------------------------------------------------------------ */
+.locale-selection select {
+  width: 200px;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Login status component.
+------------------------------------------------------------------------ */
+.login-status {
+  overflow: hidden;
+}
+.login-status ul {
+  overflow: hidden;
+}
+.login-status ul li {
+  float: right;
+  margin: 0 5px 10px 0;
+}
+.login-status-details {
+  clear: both;
+  float: right;
+}
+.login-status-details a {
+  margin-right: 10px;
+}
+.login-status-user-info {
+  color: #ffffff;
+}
+.login-status-user-name {
+  padding-left: 5px;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    IDAM component's base styles.
+------------------------------------------------------------------------ */
+.forgotten-password .has-message .error,
+.reset-password .has-message .error {
+  color: #a94442;
+}
+.forgotten-password .has-message .success,
+.reset-password .has-message .success {
+  color: #008000;
+}
+.login .has-error .error-message {
+  color: #a94442;
+  font-style: italic;
+}
+.forgotten-password .submit-button,
+.reset-password .submit-button,
+.login .submit-button,
+.user-registration .submit-button {
+  background-color: white;
+  border: 1px solid #cccccc;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+.forgotten-password .submit-button:hover,
+.reset-password .submit-button:hover,
+.login .submit-button:hover,
+.user-registration .submit-button:hover,
+.forgotten-password .submit-button:focus:active,
+.reset-password .submit-button:focus:active,
+.login .submit-button:focus:active,
+.user-registration .submit-button:focus:active {
+  background-color: #e6e6e6;
+  border-color: #adadad;
+}
+.forgotten-password .submit-button:focus,
+.reset-password .submit-button:focus,
+.login .submit-button:focus,
+.user-registration .submit-button:focus,
+.forgotten-password .submit-button:active:focus,
+.reset-password .submit-button:active:focus,
+.login .submit-button:active:focus,
+.user-registration .submit-button:active:focus {
+  outline: thin dotted;
+  outline-offset: -2px;
+}
+.login-status ul li {
+  background-color: #6c6c6c;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.login-status ul li a {
+  color: #ffffff;
+}
+.login-status-user-info span {
+  padding-right: 15px;
+}
+.user-registration div,
+.user-registration fieldset {
+  margin-bottom: 15px;
+}
+.user-registration label,
+.user-registration legend {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.user-registration .generic-error {
+  color: #a94442;
+  clear: both;
+  display: block;
+  margin-bottom: 10px;
+}
+.user-registration .has-error .error-message {
+  color: #a94442;
+  clear: both;
+  display: block;
+  margin-top: 5px;
+}
+.user-registration .submit-button {
+  margin-top: 5px;
+}
+.user-registration-recaptcha {
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+.user-registration-recaptcha cite {
+  color: #cccccc;
+  font-size: 12px;
+}
+.user-registration-recaptcha .recaptcha_image {
+  margin-bottom: 0px;
+}
+.user-registration-recaptcha_icons {
+  min-height: 20px;
+  min-width: 20px;
+}
+.user-registration-recaptcha-icon {
+  font-size: 25px;
+}
+@media screen and (min-width: 768px) {
+  .user-registration-recaptcha-icon {
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Mini-cart.
+------------------------------------------------------------------------ */
+.mini-cart {
+  font-size: 12px;
+  width: 100%;
+  max-width: 360px;
+  position: relative;
+}
+.mini-cart-dropdown {
+  width: 100%;
+  position: absolute;
+  background-color: white;
+  z-index: 9999;
+  padding: 15px;
+  border: 1px solid #797979;
+  border-top: 0;
+}
+.mini-cart-button {
+  border: 1px solid #797979;
+  height: 47px;
+  color: #339900;
+}
+.mini-cart-button p {
+  padding-left: 10px;
+}
+.mini-cart-button a {
+  color: #339900;
+}
+.mini-cart-button .mini-cart-checkout {
+  width: auto;
+  position: absolute;
+  top: 1px;
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  .mini-cart-button .mini-cart-checkout {
+  position: static;
+}
+
+}
+.mini-cart-button .fa-shopping-cart {
+  font-size: 30px;
+  position: relative;
+  top: 7px;
+}
+.mini-cart-link {
+  height: 46px;
+  padding-left: 10px;
+}
+.mini-cart-list {
+  max-height: 547px;
+}
+.mini-cart li {
+  border-bottom: 1px solid #797979;
+}
+.mini-cart li:last-child {
+  border-bottom: 0;
+}
+.mini-cart [class^="image-"] {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+}
+.mini-cart h5 {
+  font-size: 12px;
+  width: calc(-70px - -100%);
+  font-weight: bold;
+}
+.mini-cart-child-product-list li {
+  position: relative;
+  border-bottom: 0;
+}
+.mini-cart .attribute-title {
+  font-weight: bold;
+  width: calc(-125px - -100%);
+}
+.mini-cart .code {
+  font-style: italic;
+  width: calc(-125px - -100%);
+}
+.mini-cart [class^="price-"] {
+  font-weight: bold;
+  width: calc(-125px - -100%);
+}
+.mini-cart-controls {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.mini-cart input {
+  font-size: 12px;
+  width: 45px;
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 0;
+  border-color: #797979;
+  border-width: 1px 0;
+  margin: 0;
+  text-align: right;
+}
+.mini-cart input[type=number]::-webkit-inner-spin-button,
+.mini-cart input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.mini-cart .fa-plus,
+.mini-cart .fa-minus {
+  height: 30px;
+  padding: 8px 10px;
+  border: 1px solid #797979;
+}
+.mini-cart-product-delete {
+  color: #990000;
+  padding-top: 10px;
+  width: auto;
+}
+.mini-cart-product-delete span {
+  padding-right: 5px;
+}
+.mini-cart-product-delete :before {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  content: "\f00d";
+}
+.mini-cart table {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #797979;
+  background-color: #f2f2f2;
+  vertical-align: bottom;
+}
+.mini-cart table tr:last-child {
+  font-weight: bold;
+}
+.mini-cart button {
+  font-size: 14px;
+  width: calc(-5px - -50%);
+  background-color: white;
+  border: 1px solid #797979;
+  padding: 12px;
+}
+.mini-cart button span {
+  padding-left: 5px;
+}
+.mini-cart .mini-cart-checkout {
+  background-color: #339900;
+  color: #ffffff;
+  font-weight: bold;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Order summary component
+------------------------------------------------------------------------ */
+.order-summary {
+  padding: 0 15px;
+}
+@media screen and (max-width: 767px) {
+  .order-summary h3 {
+  font-size: 18px;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .order-summary-navigation:last-child {
+  display: block;
+}
+
+}
+.order-summary-product-image {
+  width: 60px;
+  height: 60px;
+}
+.order-summary h5 {
+  padding-left: 70px;
+}
+@media screen and (max-width: 767px) {
+  .order-summary h5 {
+  font-size: 12px;
+}
+
+}
+.order-summary table {
+  clear: both;
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+  font-size: 12px;
+}
+@media screen and (max-width: 767px) {
+  .order-summary table {
+  border-bottom: 1px solid #cccccc;
+}
+
+}
+.order-summary-column-headers {
+  border-bottom: 1px solid #cccccc;
+}
+.order-summary th {
+  padding: 10px 0 5px 0;
+  font-weight: bold;
+}
+.order-summary th:first-child {
+  text-align: left;
+}
+.order-summary td {
+  padding: 15px 0;
+}
+@media screen and (max-width: 767px) {
+  .order-summary td {
+  padding: 0;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .order-summary td.order-summary-product-details {
+  padding-top: 15px;
+}
+
+}
+.order-summary tr:last-child td {
+  border-bottom: 1px solid #cccccc;
+}
+@media screen and (max-width: 767px) {
+  .order-summary tr:last-child td {
+  border: none;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .order-summary tr:last-child td.order-summary-product-subtotal,
+.order-summary tr:last-child td.order-summary-product-quantity {
+  margin-bottom: 15px;
+  display: inline-block;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .order-summary tr {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+}
+.order-summary-product-details-column {
+  width: 45%;
+}
+@media screen and (max-width: 767px) {
+  .order-summary-product-details-column {
+  width: 100%;
+}
+
+}
+.order-summary-product-code-column {
+  width: 15%;
+}
+@media screen and (max-width: 767px) {
+  .order-summary-product-code-column {
+  width: 100%;
+}
+
+}
+.order-summary-product-quantity-column,
+.order-summary-product-subtotal-column {
+  width: 12.5%;
+}
+.order-summary-product-price-column {
+  width: 15%;
+}
+@media screen and (max-width: 767px) {
+  .order-summary-product-title {
+  text-decoration: underline;
+}
+
+}
+.order-summary-tax-class {
+  font-style: italic;
+}
+[data-hide-tax-label="true"] .order-summary-tax-class {
+  display: none;
+}
+.order-summary-product-code {
+  font-style: italic;
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  .order-summary-product-code {
+  text-align: left;
+}
+
+}
+.order-summary-product-unit-price,
+.order-summary-product-subtotal,
+.order-summary-product-code-header,
+.order-summary-product-quantity {
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  .order-summary-product-unit-price,
+.order-summary-product-subtotal,
+.order-summary-product-code-header,
+.order-summary-product-quantity {
+  padding: 0;
+}
+
+}
+.order-summary-product-subtotal {
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .order-summary-product-subtotal {
+  padding: 0;
+  position: absolute;
+  bottom: 1px;
+  right: 0px;
+}
+
+}
+.order-summary-product-details {
+  padding: 0 0 0 70px;
+}
+.order-summary-final-prices {
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  .order-summary-final-prices tr {
+  display: table-row;
+}
+
+}
+.order-summary-final-prices tr:last-child {
+  font-size: 14px;
+  font-weight: bold;
+}
+.order-summary-final-prices tr:last-child td {
+  border: none;
+}
+.order-summary-final-prices td {
+  border: 0;
+  padding: 5px 0;
+}
+.order-summary-price-label-column {
+  width: 85%;
+}
+@media screen and (max-width: 767px) {
+  .order-summary-price-label-column {
+  width: 60%;
+}
+
+}
+.order-summary textarea {
+  resize: none;
+  height: 80px;
+}
+.order-summary input[type="text"],
+.order-summary input[type="email"] {
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .order-summary input[type="text"],
+.order-summary input[type="email"] {
+  width: 100%;
+}
+
+}
+.order-summary label,
+.order-summary-terms-and-conditions-heading,
+.order-summary-special-instructions-label,
+.order-summary-sold-to-label,
+.order-summary legend {
+  font-weight: bold;
+}
+.order-summary-terms-and-conditions label {
+  font-weight: normal;
+}
+.order-summary-terms-and-conditions-label {
+  padding-left: 25px;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Payment options component
+------------------------------------------------------------------------ */
+.payment-options {
+  padding: 0 15px;
+}
+.payment-options legend {
+  display: none;
+}
+.payment-options .radio {
+  cursor: pointer;
+}
+.payment-options input[type="text"] {
+  width: calc(-20px - -100%);
+}
+.payment-options .parsley-errors-list {
+  padding-left: 20px;
+}
+.payment-options-iframe-container {
+  padding-bottom: 550px;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+	_______________________
+	
+    Pearson banner component.
+------------------------------------------------------------------------ */
+.pearson-banner {
+  background-color: #000000;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Product category component.
+------------------------------------------------------------------------ */
+.product-category a {
+  color: #000;
+  margin-bottom: 10px;
+}
+.product-category .active > a {
+  font-weight: bold;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Product facets
+------------------------------------------------------------------------ */
+.product-facets h3 {
+  margin-bottom: 5px;
+}
+.product-facets ul {
+  margin-bottom: 15px;
+}
+.product-facets ul:last-child {
+  margin-bottom: 0px;
+}
+.product-facets li {
+  margin-bottom: 10px;
+}
+.product-facets li:last-child {
+  margin-bottom: 0px;
+}
+.product-facets a:before,
+.product-facets p:before {
+  content: '\f096';
+  color: black;
+  font-family: Fontawesome;
+  padding-right: 5px;
+}
+.product-facets a.selected,
+.product-facets p.selected {
+  font-weight: bold;
+}
+.product-facets a.selected:before,
+.product-facets p.selected:before {
+  content: '\f046';
+  font-family: Fontawesome;
+  padding-right: 5px;
+}
+.product-facets a:hover,
+.product-facets p:hover {
+  text-decoration: none;
+}
+.product-facets p {
+  cursor: default;
+}
+.product-facets span {
+  padding-left: 5px;
+}
+.product-facets-group-header {
+  background-color: #e4e4e4;
+  content: "\e114";
+  font-size: 20px;
+  padding: 5px;
+}
+.product-facets-group-header span {
+  font-size: 16px;
+  padding: 5px;
+}
+.product-facets-selected-title {
+  padding: 5px;
+  font-weight: bold;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Product image gallery component.
+------------------------------------------------------------------------ */
+.product-image-gallery-container {
+  background: black;
+}
+.product-image-gallery-control {
+  width: 2%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 60px 40px 60px 20px;
+  top: calc(-160px - -40%);
+  font-size: 40px;
+}
+@media screen and (min-width: 768px) {
+  .product-image-gallery-control.left {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+.product-image-gallery-control.right {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  color: white;
+}
+
+}
+.product-image-gallery-indicators {
+  padding: 15px 15px 0;
+}
+.product-image-gallery-indicators li {
+  margin: 0 15px 15px 0;
+  width: 60px;
+  height: 60px;
+}
+.product-image-gallery-indicators .active:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 5px solid white;
+}
+.product-image-gallery-indicators img {
+  width: 60px;
+  height: 60px;
+}
+.product-image-gallery-modal-icon {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid white;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 5px;
+}
+.product-image-gallery-modal-container {
+  background: black;
+}
+.product-image-gallery-modal-container.ui-widget .close {
+  font-size: 20px;
+}
+.product-image-gallery-modal-container .product-image-gallery-control {
+  background: none;
+}
+.product-image-gallery-modal-container .product-image-gallery-control.left {
+  left: -80px;
+}
+.product-image-gallery-modal-container .product-image-gallery-control.right {
+  right: -80px;
+}
+.product-image-gallery-modal-container .product-image-gallery-indicators {
+  padding: 15px 0;
+}
+.product-image-gallery-modal-container .product-image-gallery-indicators li,
+.product-image-gallery-modal-container .product-image-gallery-indicators img {
+  width: 120px;
+  height: 120px;
+}
+.product-image-gallery-modal-container + .ui-widget-overlay {
+  background: black;
+  opacity: 1;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Product search results list.
+------------------------------------------------------------------------ */
+.product-search-results-list li {
+  margin-bottom: 25px;
+}
+.product-search-results-list-authors {
+  margin-bottom: 10px;
+}
+.product-search-results-list-authors li {
+  margin-bottom: 0;
+}
+.product-search-results-list article {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+@media screen and (min-width: 768px) {
+  .product-search-results-list-count {
+  margin-top: 8px;
+  display: inline-block;
+  float: left;
+}
+
+}
+.product-search-results-list img {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  width: 60px;
+  height: 60px;
+}
+@media screen and (min-width: 768px) {
+  .product-search-results-list img {
+  width: 100px;
+  height: 100px;
+}
+
+}
+.product-search-results-list .item-details {
+  margin-left: 80px;
+  width: calc(-80px - -100%);
+}
+@media screen and (min-width: 768px) {
+  .product-search-results-list .item-details {
+  margin-left: 120px;
+  width: calc(-120px - -100%);
+}
+
+}
+.product-search-results-list h2 {
+  margin-bottom: 10px;
+}
+.product-search-results-list p,
+.product-search-results-list a {
+  margin-bottom: 10px;
+}
+.product-search-results-list-pages-container {
+  overflow: auto;
+  -ms-overflow-style: none;
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .product-search-results-list-pages-container {
+  min-height: 48px;
+}
+
+}
+.product-search-results-list-pages-container nav {
+  display: inline-block;
+}
+@media screen and (max-width: 767px) {
+  .product-search-results-list-pages-container nav {
+  display: block;
+}
+
+}
+.product-search-results-list-pages-container li {
+  padding-right: 10px;
+}
+.product-search-results-list-pages-container li:last-child {
+  padding-right: 30px;
+}
+.product-search-results-list-pages-container .prev {
+  padding-right: 30px;
+}
+@media screen and (max-width: 767px) {
+  .product-search-results-list-pages-container .prev {
+  border: 1px solid #cccccc;
+  padding: 15px 0;
+  width: 85px;
+  left: 15px;
+}
+
+}
+.product-search-results-list-pages-container .current-page {
+  left: 100px;
+  right: 100px;
+  padding-top: 16px;
+}
+@media screen and (max-width: 767px) {
+  .product-search-results-list-pages-container .next {
+  border: 1px solid #cccccc;
+  padding: 15px 0;
+  width: 85px;
+  right: 15px;
+}
+
+}
+.product-search-results-list h3 {
+  margin-bottom: 15px;
+}
+.product-search-results-list .product-facets li {
+  margin-bottom: 10px;
+}
+.product-search-results-list label {
+  font-weight: bold;
+  margin: 0 10px 5px 0;
+}
+.product-search-results-list-sort {
+  overflow: auto;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .product-search-results-list form {
+  display: inline-block;
+  float: right;
+}
+
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Product search results sort.
+------------------------------------------------------------------------ */
+.product-search-results-sort {
+  overflow: auto;
+}
+.product-search-results-sort-btn {
+  background-image: linear-gradient(to bottom, #ffffff 0%, #f7f3f3 100%);
+  border: 1px solid #CEC2C2;
+  color: black;
+  margin: 1px;
+}
+.product-search-results-sort-btn-active {
+  background-image: linear-gradient(to bottom, #333333 0%, #000000 100%);
+  border: 1px solid transparent;
+  color: white !important;
+}
+.product-search-results-sort-btn:hover {
+  border: 1px solid #CEC2C2;
+}
+.product-search-results-sort-label {
+  font-weight: bold;
+}
+.product-search-results-sort h4 {
+  font-size: 14px;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Record list component.
+------------------------------------------------------------------------ */
+.record-list-item {
+  padding: 5px;
+}
+.record-list-item-attributes li:last-child {
+  border-bottom: 1px solid #C3C3C3;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Resource list component
+------------------------------------------------------------------------ */
+.resource-list-item {
+  padding: 5px;
+  border-bottom: 1px solid #C3C3C3;
+}
+/*
+ * Project: Pearson DMCP
+ * Copyright(c): 2014
+ */
+/* ---------------------------------------------------------------------
+Search Box
+------------------------------------------------------------------------ */
+.search-box {
+  width: 150px;
+  border: 1px solid #cccccc;
+}
+.search-box-input {
+  height: 30px;
+  -webkit-appearance: none;
+  padding-right: 35px;
+}
+.search-box-input::-webkit-input-placeholder,
+.search-box-input::-moz-placeholder,
+.search-box-input:-ms-input-placeholder {
+  color: #666666;
+}
+.search-box-icon {
+  width: 30px;
+  height: 30px;
+  color: #666666;
+}
+@media screen and (min-width: 768px) {
+  main .search-box {
+  width: 600px;
+}
+
+}
+main .search-box-input {
+  height: 40px;
+  padding-right: 45px;
+}
+main .search-box-icon {
+  background-color: #0099ff;
+  font-size: 20px;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Shopping cart.
+------------------------------------------------------------------------ */
+.shopping-cart {
+  font-size: 12px;
+  border: 1px solid #cccccc;
+  padding: 15px 15px 0 15px;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart h3 {
+  font-size: 18px;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-navigation:last-child {
+  display: block;
+}
+
+}
+.shopping-cart-error-message {
+  color: #a94442;
+  font-style: italic;
+  font-size: 14px;
+}
+.shopping-cart-back,
+.shopping-cart-checkout {
+  font-size: 14px;
+  padding: 9px 12px;
+  color: white;
+  border-radius: 0;
+  border: 1px solid #797979;
+  max-width: 50%;
+}
+.shopping-cart-back span,
+.shopping-cart-checkout span {
+  font-size: 12px;
+}
+.shopping-cart-back {
+  background-color: #999999;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-back {
+  font-size: 10px;
+  height: 40px;
+  width: 75px;
+  text-align: center;
+}
+
+}
+.shopping-cart-checkout {
+  background-color: #339900;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-checkout {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  max-width: none;
+}
+
+}
+.shopping-cart-product-image {
+  width: 60px;
+  height: 60px;
+}
+.shopping-cart h5 {
+  padding-left: 70px;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart h5 {
+  font-size: 12px;
+}
+
+}
+.shopping-cart table {
+  clear: both;
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+}
+.shopping-cart-column-headers {
+  border-bottom: 1px solid #cccccc;
+}
+.shopping-cart th {
+  padding: 10px 0 5px 0;
+  font-weight: bold;
+  border-bottom: 1px solid #cccccc;
+}
+.shopping-cart th:first-child {
+  text-align: left;
+}
+.shopping-cart td {
+  padding: 15px 0;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart tr {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-quantity {
+  width: 40%;
+  position: absolute;
+  bottom: -6px;
+  right: 60px;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-quantity label {
+  float: right;
+  padding-top: 8px;
+}
+
+}
+.shopping-cart-product-details-column {
+  width: 50%;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-product-details-column {
+  width: 100%;
+}
+
+}
+.shopping-cart-product-quantity-column {
+  width: 20%;
+}
+.shopping-cart-product-price-column,
+.shopping-cart-product-subtotal-column {
+  width: 15%;
+}
+.shopping-cart-product-title {
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-product-title {
+  font-weight: normal;
+  text-decoration: underline;
+}
+
+}
+.shopping-cart-product-code {
+  font-style: italic;
+}
+.shopping-cart-product-unit-price,
+.shopping-cart-product-subtotal {
+  text-align: right;
+}
+.shopping-cart-product-subtotal {
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-product-subtotal {
+  position: absolute;
+  bottom: 1px;
+  right: 0px;
+}
+
+}
+.shopping-cart-product-details {
+  padding-left: 70px;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-product-details {
+  min-height: 65px;
+}
+
+}
+.shopping-cart-product-details + .shopping-cart-product-delete {
+  position: absolute;
+  left: 70px;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-product-details + .shopping-cart-product-delete {
+  position: static;
+}
+
+}
+.shopping-cart input {
+  font-size: 12px;
+  width: 45px;
+  height: 30px;
+  padding: 6px;
+  text-align: right;
+  border-radius: 0;
+  border: 1px solid #797979;
+}
+.shopping-cart-product-update,
+.shopping-cart-product-delete {
+  font-size: 12px;
+  background-color: #ffffff;
+}
+.shopping-cart-product-delete {
+  color: #990000;
+}
+.shopping-cart-final-prices {
+  text-align: right;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-final-prices {
+  font-weight: bold;
+}
+
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-final-prices tr {
+  display: table-row;
+}
+
+}
+.shopping-cart-final-prices tr:last-child {
+  font-size: 14px;
+  font-weight: bold;
+}
+.shopping-cart-final-prices tr:first-child td {
+  border-top: 1px solid #cccccc;
+  padding-top: 15px;
+}
+.shopping-cart-final-prices td {
+  border: 0;
+  padding: 5px 0;
+}
+.shopping-cart-price-label-column {
+  width: 85%;
+}
+@media screen and (max-width: 767px) {
+  .shopping-cart-price-label-column {
+  width: 60%;
+}
+
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Tab panel component.
+------------------------------------------------------------------------ */
+.tab-panel .nav-tabs {
+  border-bottom-color: #666;
+}
+.tab-panel .nav-tabs li a,
+.tab-panel .nav-tabs li a:hover,
+.tab-panel .nav-tabs li a:focus {
+  color: black;
+  border-color: #666;
+  background: #eaeaea;
+}
+.tab-panel .nav-tabs li.active a {
+  background: white;
+  font-weight: bold;
+  border-bottom-color: transparent;
+}
+.tab-panel .tab-content .tab-pane {
+  border: 1px solid #666;
+  border-top-color: transparent;
+  padding: 15px;
+}
+/* ---------------------------------------------------------------------
+    PEARSON MARKETING CLOUD
+  _______________________
+  
+    Mega nav component.
+------------------------------------------------------------------------ */
+.mega-nav .dropdown-menu {
+  width: 100%;
+}
+.mega-nav .column-control {
+  background-color: #ffffff;
+}
+
