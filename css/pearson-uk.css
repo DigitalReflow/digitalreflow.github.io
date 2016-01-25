@@ -67,7 +67,7 @@ hr {
   font-size: 0;
 }
 .breadcrumb li:first-child a:before {
-  background-image: url('images/home-icon.svg');
+  background-image: url('../images/home-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;
@@ -133,7 +133,7 @@ header .check-box-list {
   background: #005a70;
 }
 .mega-nav .navbar-brand {
-  background-image: url('images/logo.svg');
+  background-image: url('../images/logo.svg');
   background-position: left 1rem center;
   background-repeat: no-repeat;
   background-size: 80%;
@@ -696,73 +696,73 @@ a[href*=modal-]:hover,
   font-size: 0.875rem;
 }
 .document-list a[href$='.csv']:before {
-  background-image: url('images/filetypes/icon-csv.png');
+  background-image: url('../images/filetypes/icon-csv.png');
 }
 .document-list a[href$='.doc']:before {
-  background-image: url('images/filetypes/icon-doc.png');
+  background-image: url('../images/filetypes/icon-doc.png');
 }
 .document-list a[href$='.docx']:before {
-  background-image: url('images/filetypes/icon-docx.png');
+  background-image: url('../images/filetypes/icon-docx.png');
 }
 .document-list a[href$='.exe']:before {
-  background-image: url('images/filetypes/icon-exe.png');
+  background-image: url('../images/filetypes/icon-exe.png');
 }
 .document-list a[href$='.gif']:before {
-  background-image: url('images/filetypes/icon-gif.png');
+  background-image: url('../images/filetypes/icon-gif.png');
 }
 .document-list a[href$='.jpeg']:before {
-  background-image: url('images/filetypes/icon-jpeg.png');
+  background-image: url('../images/filetypes/icon-jpeg.png');
 }
 .document-list a[href$='.jpg']:before {
-  background-image: url('images/filetypes/icon-jpg.png');
+  background-image: url('../images/filetypes/icon-jpg.png');
 }
 .document-list a[href$='.mp3']:before {
-  background-image: url('images/filetypes/icon-mp3.png');
+  background-image: url('../images/filetypes/icon-mp3.png');
 }
 .document-list a[href$='.mp4']:before {
-  background-image: url('images/filetypes/icon-mp4.png');
+  background-image: url('../images/filetypes/icon-mp4.png');
 }
 .document-list a[href$='.pdf']:before {
-  background-image: url('images/filetypes/icon-pdf.png');
+  background-image: url('../images/filetypes/icon-pdf.png');
 }
 .document-list a[href$='.png']:before {
-  background-image: url('images/filetypes/icon-png.png');
+  background-image: url('../images/filetypes/icon-png.png');
 }
 .document-list a[href$='.pps']:before {
-  background-image: url('images/filetypes/icon-pps.png');
+  background-image: url('../images/filetypes/icon-pps.png');
 }
 .document-list a[href$='.ppsx']:before {
-  background-image: url('images/filetypes/icon-ppsx.png');
+  background-image: url('../images/filetypes/icon-ppsx.png');
 }
 .document-list a[href$='.ppt']:before {
-  background-image: url('images/filetypes/icon-ppt.png');
+  background-image: url('../images/filetypes/icon-ppt.png');
 }
 .document-list a[href$='.pptx']:before {
-  background-image: url('images/filetypes/icon-pptx.png');
+  background-image: url('../images/filetypes/icon-pptx.png');
 }
 .document-list a[href$='.rtf']:before {
-  background-image: url('images/filetypes/icon-rtf.png');
+  background-image: url('../images/filetypes/icon-rtf.png');
 }
 .document-list a[href$='.swf']:before {
-  background-image: url('images/filetypes/icon-swf.png');
+  background-image: url('../images/filetypes/icon-swf.png');
 }
 .document-list a[href$='.txt']:before {
-  background-image: url('images/filetypes/icon-txt.png');
+  background-image: url('../images/filetypes/icon-txt.png');
 }
 .document-list a[href$='.wav']:before {
-  background-image: url('images/filetypes/icon-wav.png');
+  background-image: url('../images/filetypes/icon-wav.png');
 }
 .document-list a[href$='.wma']:before {
-  background-image: url('images/filetypes/icon-wma.png');
+  background-image: url('../images/filetypes/icon-wma.png');
 }
 .document-list a[href$='.xls']:before {
-  background-image: url('images/filetypes/icon-xls.png');
+  background-image: url('../images/filetypes/icon-xls.png');
 }
 .document-list a[href$='.xslx']:before {
-  background-image: url('images/filetypes/icon-xslx.png');
+  background-image: url('../images/filetypes/icon-xslx.png');
 }
 .document-list a[href$='.zip']:before {
-  background-image: url('images/filetypes/icon-zip.png');
+  background-image: url('../images/filetypes/icon-zip.png');
 }
 .link-list-middle-menu.active ul {
   border-bottom-left-radius: 4px;
@@ -1871,7 +1871,7 @@ section:not(.blog-flex) .blog-list-flex-layout li:first-of-type .blog-list-info 
   width: 30px;
 }
 .navbar .gsc-search-button:before {
-  background-image: url('images/search-icon.svg');
+  background-image: url('../images/search-icon.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 100%;

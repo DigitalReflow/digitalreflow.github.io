@@ -599,16 +599,6 @@ $(document).ready(function () {
 $(function () {
   'use strict';
 
-  // Hack to wrap every article with the modal-component class in a new div with a unique id
-  // Appends that ID into a paragraph tag into the view so the content author know how to link to this modal
-  $('.modal-component').each(function (index) {
-    $(this).append('<p class="modal-id-ref">Use <strong>#modal-' + index + '</strong> in your link to call this modal</p>');
-    $(this).wrapAll('<div id="modal-' + index + '" class="modal"></div>');
-  });
-
-  // Append feedbackModal id to feedback modal in footer
-  $('.feedback-modal').wrapAll('<div id="modal-feedback" class="modal"></div>');
-
   // Modal plugin
   $.fn.extend({
     funkyModal: function () {
