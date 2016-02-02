@@ -668,6 +668,17 @@ $(document).ready(function () {
   }
 });
 
+$(document).on('click', '.child-page-list h4 a', function(e) {
+  e.preventDefault();
+  $(this).parents('.child-page-list').toggleClass('open');
+});
+
+// Hack to add custom dropdown feature until PMC platform is updated to hover event
+$(document).on('click', '.mega-nav-full-width > a', function(e) {
+  e.preventDefault();
+  $(this).parent().toggleClass('open');
+});
+
 $(window).scroll(function () {
   'use strict';
   if ($(document).scrollTop() > 10) {
