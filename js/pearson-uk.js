@@ -168,23 +168,37 @@ $(document).ready(function () {
               $items = $modal.find('h4'),
               itemsArray = []; // Array to store text nodes from list
 
-            // Populate the array with list item text nodes
+            // Populate the array with list item text nodes and matching href values
+            // Creates array of objects with key pairs for text node and href attribute
             for (var i = 0, l = $items.length; i < l; i++) {
 
-              var textNode = $items.eq(i).text(), // Original text node from list item
+              var $item = $items.eq(i),
+                textNode = $item.text(), // Original text node from list item
+                href = $item.parent().attr('href'),
                 splitTextNode = textNode.split('- '), // Remove characters before hyphen (followed by space)
-                textNodeCapitalised = self.capitalizeFirstLetter(splitTextNode[splitTextNode.length - 1]); // Capitalise the string's first character
+                textNodeCapitalised = self.capitalizeFirstLetter(splitTextNode[splitTextNode.length - 1]), // Capitalise the string's first character
+                obj = {}; // Create object for each item's set of values
 
-              // Push text node into array
-              itemsArray.push(textNodeCapitalised);
+              // Inject key pairs into object
+              obj.text = textNodeCapitalised;
+              obj.href = href;
+
+              // Push item object into array
+              itemsArray.push(obj);
             }
 
-            // Sort the array of text nodes alphabetically
-            itemsArray.sort();
+            // Sort objects alphabetically based on text node key pair value
+            itemsArray = itemsArray.sort(function (a, b) {
+              return a.text.localeCompare(b.text);
+            });
 
-            // Inject the sorted text nodes back into the list items
+            // Repopulate the list with sorted text nodes and href's
             for (var i = 0, l = $items.length; i < l; i++) {
-              $items.eq(i).text(itemsArray[i]);
+
+              var $item = $items.eq(i);
+
+              $item.text(itemsArray[i].text);
+              $item.parent().attr('href', itemsArray[i].href);
             }
 
           }
@@ -230,7 +244,6 @@ $(document).ready(function () {
   }
 
 }(jQuery));
-
 jQuery(document).ready(function () {
   'use strict';
 
@@ -244,7 +257,6 @@ jQuery(document).ready(function () {
     return false;
   }
 });
-
 function switchAuthorPhoto(authorName, elemHead) {
     if (authorName) {
         var imagesPath = '/content/dam/region-core/uk/pearson-uk/images/authors/';
@@ -587,15 +599,6 @@ $(document).ready(function () {
   }
 });
 
-$(document).ready(function () {
-  'use strict';
-  // open all external links in a new window/tab
-  $("a[href^='http']").attr("target", "_blank");
-
-  // add unique class to remember homepage checkbox
-  $("input[name='make-homepage']").closest('fieldset').addClass("remember-my-selection");
-});
-
 $(function () {
   'use strict';
 
@@ -668,26 +671,104 @@ $(document).ready(function () {
   }
 });
 
-$(document).on('click', '.child-page-list h4 a', function(e) {
+$(document).on('click', '.child-page-list h4 a', function (e) {
+  'use strict';
   e.preventDefault();
   $(this).parents('.child-page-list').toggleClass('open');
 });
 
-// Hack to add custom dropdown feature until PMC platform is updated to hover event
-$(document).on('click', '.mega-nav-full-width > a', function(e) {
-  e.preventDefault();
-  $(this).parent().toggleClass('open');
+/*! https://mths.be/startswith v0.2.0 by @mathias */
+if (!String.prototype.startsWith) {
+  (function() {
+    'use strict'; // needed to support `apply`/`call` with `undefined`/`null`
+    var defineProperty = (function() {
+      // IE 8 only supports `Object.defineProperty` on DOM elements
+      try {
+        var object = {};
+        var $defineProperty = Object.defineProperty;
+        var result = $defineProperty(object, object, object) && $defineProperty;
+      } catch(error) {}
+      return result;
+    }());
+    var toString = {}.toString;
+    var startsWith = function(search) {
+      if (this == null) {
+        throw TypeError();
+      }
+      var string = String(this);
+      if (search && toString.call(search) == '[object RegExp]') {
+        throw TypeError();
+      }
+      var stringLength = string.length;
+      var searchString = String(search);
+      var searchLength = searchString.length;
+      var position = arguments.length > 1 ? arguments[1] : undefined;
+      // `ToInteger`
+      var pos = position ? Number(position) : 0;
+      if (pos != pos) { // better `isNaN`
+        pos = 0;
+      }
+      var start = Math.min(Math.max(pos, 0), stringLength);
+      // Avoid the `indexOf` call if no match is possible
+      if (searchLength + start > stringLength) {
+        return false;
+      }
+      var index = -1;
+      while (++index < searchLength) {
+        if (string.charCodeAt(start + index) != searchString.charCodeAt(index)) {
+          return false;
+        }
+      }
+      return true;
+    };
+    if (defineProperty) {
+      defineProperty(String.prototype, 'startsWith', {
+        'value': startsWith,
+        'configurable': true,
+        'writable': true
+      });
+    } else {
+      String.prototype.startsWith = startsWith;
+    }
+  }());
+}
+$(document).ready(function () {
+  'use strict';
+
+  // Add active class to nav item and parent
+  var $path = location.pathname.replace(/\.html$/, '');
+  $('.mega-nav li > a').each(function () {
+    var $this = $(this);
+    if ($path.startsWith($this.attr('href').replace(/\.html$/, ''))) {
+      $this.addClass('active').parents('.dropdown').find('> a').addClass('active');
+    }
+  });
+
+  // Hack to remove binding selectors until hover event is removed from the PMC platform
+  $('.mega-nav-full-width').removeClass("dropdown");
+  $('.mega-nav-full-width > a').removeClass('dropdown-toggle').removeAttr('data-toggle');
 });
 
-$(window).scroll(function () {
+// Hack to add custom dropdown feature until PMC platform is updated to hover event
+$(document).on('click', '.mega-nav-full-width > a', function (e) {
   'use strict';
-  if ($(document).scrollTop() > 10) {
-    $('.navbar').addClass('shrink');
-    $('.mega-nav-full-width').removeClass('open');
-  } else {
-    $('.navbar').removeClass('shrink');
+  if ($(this).parent('li').children('.dropdown-menu').length) {
+    e.preventDefault();
+    $(this).parent().toggleClass('open').siblings().removeClass('open');
   }
 });
+
+if ($(window).width() > 768) {
+  $(window).scroll(function () {
+    'use strict';
+    if ($(document).scrollTop() > 10) {
+      $('.navbar').addClass('shrink');
+      $('.mega-nav-full-width').removeClass('open');
+    } else {
+      $('.navbar').removeClass('shrink');
+    }
+  });
+}
 $(document).ready(function () {
   'use strict';
 
@@ -707,3 +788,165 @@ $(document).on('click', '.gsc-search-button', function () {
   $('td.gsc-input').toggleClass('open');
   $('input.gsc-input').focus();
 });
+! function () {
+  if (!window.hasCookieConsent) {
+    window.hasCookieConsent = !0;
+    var e = "cookieconsent_options",
+      t = "update_cookieconsent_options",
+      n = "cookieconsent_dismissed",
+      i = "//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/";
+    if (!(document.cookie.indexOf(n) > -1)) {
+      "function" != typeof String.prototype.trim && (String.prototype.trim = function () {
+        return this.replace(/^\s+|\s+$/g, "")
+      });
+      var o, s = {
+          isArray: function (e) {
+            var t = Object.prototype.toString.call(e);
+            return "[object Array]" == t
+          },
+          isObject: function (e) {
+            return "[object Object]" == Object.prototype.toString.call(e)
+          },
+          each: function (e, t, n, i) {
+            if (s.isObject(e) && !i)
+              for (var o in e) e.hasOwnProperty(o) && t.call(n, e[o], o, e);
+            else
+              for (var r = 0, c = e.length; c > r; r++) t.call(n, e[r], r, e)
+          },
+          merge: function (e, t) {
+            e && s.each(t, function (t, n) {
+              s.isObject(t) && s.isObject(e[n]) ? s.merge(e[n], t) : e[n] = t
+            })
+          },
+          bind: function (e, t) {
+            return function () {
+              return e.apply(t, arguments)
+            }
+          },
+          queryObject: function (e, t) {
+            var n, i = 0,
+              o = e;
+            for (t = t.split(".");
+              (n = t[i++]) && o.hasOwnProperty(n) && (o = o[n]);)
+              if (i === t.length) return o;
+            return null
+          },
+          setCookie: function (e, t, n, i, o) {
+            n = n || 365;
+            var s = new Date;
+            s.setDate(s.getDate() + n);
+            var r = [e + "=" + t, "expires=" + s.toUTCString(), "path=" + o || "/"];
+            i && r.push("domain=" + i), document.cookie = r.join(";")
+          },
+          addEventListener: function (e, t, n) {
+            e.addEventListener ? e.addEventListener(t, n) : e.attachEvent("on" + t, n)
+          }
+        },
+        r = function () {
+          var e = "data-cc-event",
+            t = "data-cc-if",
+            n = function (e, t, i) {
+              return s.isArray(t) ? s.each(t, function (t) {
+                n(e, t, i)
+              }) : void(e.addEventListener ? e.addEventListener(t, i) : e.attachEvent("on" + t, i))
+            },
+            i = function (e, t) {
+              return e.replace(/\{\{(.*?)\}\}/g, function (e, n) {
+                for (var i, o, r = n.split("||"); o = r.shift();) {
+                  if (o = o.trim(), '"' === o[0]) return o.slice(1, o.length - 1);
+                  if (i = s.queryObject(t, o)) return i
+                }
+                return ""
+              })
+            },
+            o = function (e) {
+              var t = document.createElement("div");
+              return t.innerHTML = e, t.children[0]
+            },
+            r = function (e, t, n) {
+              var i = e.parentNode.querySelectorAll("[" + t + "]");
+              s.each(i, function (e) {
+                var i = e.getAttribute(t);
+                n(e, i)
+              }, window, !0)
+            },
+            c = function (t, i) {
+              r(t, e, function (e, t) {
+                var o = t.split(":"),
+                  r = s.queryObject(i, o[1]);
+                n(e, o[0], s.bind(r, i))
+              })
+            },
+            a = function (e, n) {
+              r(e, t, function (e, t) {
+                var i = s.queryObject(n, t);
+                i || e.parentNode.removeChild(e)
+              })
+            };
+          return {
+            build: function (e, t) {
+              s.isArray(e) && (e = e.join("")), e = i(e, t);
+              var n = o(e);
+              return c(n, t), a(n, t), n
+            }
+          }
+        }(),
+        c = {
+          options: {
+            title: "Privacy and Cookies",
+            message: "This Pearson website stores cookies on your computer which help us make the website work better for you.",
+            dismiss: "Close",
+            learnMore: "Find out more",
+            link: null,
+            target: "_self",
+            container: null,
+            theme: "dark-floating",
+            domain: null,
+            path: "/",
+            expiryDays: 365,
+            markup: ['<div class="cc_banner-wrapper {{containerClasses}}">', '<div class="cc_banner cc_container cc_container--open">', '<h4 class="cc_title">{{options.title}}</h4><p class="cc_message">{{options.message}}</p>', '<div class="cc_btn_wrapper">', '<a data-cc-if="options.link" target="{{ options.target }}" class="cc_more_info" href="{{options.link || "#null"}}">{{options.learnMore}}</a>', '<a href="#null" data-cc-event="click:dismiss" target="_blank" class="cc_btn cc_btn_accept_all">{{options.dismiss}}</a>', "</div>", "</div>", "</div>"]
+          },
+          init: function () {
+            var t = window[e];
+            t && this.setOptions(t), this.setContainer(), this.options.theme ? this.loadTheme(this.render) : this.render()
+          },
+          setOptionsOnTheFly: function (e) {
+            this.setOptions(e), this.render()
+          },
+          setOptions: function (e) {
+            s.merge(this.options, e)
+          },
+          setContainer: function () {
+            this.options.container ? this.container = document.querySelector(this.options.container) : this.container = document.body, this.containerClasses = "", navigator.appVersion.indexOf("MSIE 8") > -1 && (this.containerClasses += " cc_ie8")
+          },
+          loadTheme: function (e) {
+            var t = this.options.theme; - 1 === t.indexOf(".css") && (t = i + t + ".css");
+            var n = document.createElement("link");
+            n.rel = "stylesheet", n.type = "text/css", n.href = t;
+            var o = !1;
+            n.onload = s.bind(function () {
+              !o && e && (e.call(this), o = !0)
+            }, this), document.getElementsByTagName("head")[0].appendChild(n)
+          },
+          render: function () {
+            this.element && this.element.parentNode && (this.element.parentNode.removeChild(this.element), delete this.element), this.element = r.build(this.options.markup, this), this.container.firstChild ? this.container.insertBefore(this.element, this.container.firstChild) : this.container.appendChild(this.element)
+          },
+          dismiss: function (e) {
+            e.preventDefault && e.preventDefault(), e.returnValue = !1, this.setDismissedCookie(), this.container.removeChild(this.element)
+          },
+          setDismissedCookie: function () {
+            s.setCookie(n, "yes", this.options.expiryDays, this.options.domain, this.options.path)
+          }
+        },
+        a = !1;
+      (o = function () {
+        a || "complete" != document.readyState || (c.init(), a = !0, window[t] = s.bind(c.setOptionsOnTheFly, c))
+      })(), s.addEventListener(document, "readystatechange", o)
+    }
+  }
+}();
+
+window.cookieconsent_options = {
+  "link": "/pearson-privacy-and-you/cookie-policy.html",
+  "theme": false
+};
